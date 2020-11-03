@@ -5,9 +5,141 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #454845;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #2f9b9b;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.header__title {
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+.player {
+  position: absolute;
+  top: 95%;
+  left: 20px;
+  transform: translateY(-100%);
+  width: 90%;
+}
+
+.rhap_container {
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  background: unset;
+  box-shadow: unset;
+  outline: unset;
+  position: relative;
+  line-height: 0;
+}
+
+.rhap_additional-controls {
+  display: none;
+}
+
+.rhap_volume-controls {
+  display: none;
+}
+
+.rhap_controls-section {
+  margin: 0;
+  padding: 0;
+}
+
+.rhap_horizontal-reverse .rhap_controls-section {
+  margin: 0;
+  width: 0;
+}
+
+.rhap_progress-container {
+  margin: 0;
+  padding: 0;
+}
+
+.rhap_play-pause-button {
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  margin: 0;
+  padding: 0;
+  font-size: 1px;
+  background-image: url("Polygon.svg");
+  height: 26px;
+  width: 20px;
+}
+
+.rhap_play-pause-button_pause {
+  background-image: url("Union.svg");
+  height: 18px;
+  width: 14px;
+}
+
+.rhap_progress-bar {
+  margin: 25px 0 0 -10px;
+  height: 3px;
+}
+
+.rhap_time{
+  position: absolute;
+  bottom: 14px;
+  right:10px;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 26px;
+  color:#fff;
+}
+
+/*изначальный цвет прогресс даунлоадинга*/
+.rhap_progress-bar-show-download {
+  background-color: rgba(243, 243, 243, 0.3);
+}
+
+/*положение ползунка*/
+.rhap_progress-filled {
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.rhap_progress-container {
+  background: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  width: 1000px;
+}
+
+.rhap_progress-indicator {
+  background: unset;
+  box-shadow: unset;
+  outline: unset;
+  border: unset;
+}
+
+.rhap_progress-indicator {
+  box-sizing: border-box;
+  position: unset;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  margin: 0;
+  background: unset;
+  border-radius: unset;
+  background: unset;
+  box-shadow: unset;
+  outline: unset;
+  border: unset;
+}
+
