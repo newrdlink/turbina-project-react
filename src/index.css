@@ -76,13 +76,13 @@ code {
   margin: 0;
   padding: 0;
   font-size: 1px;
-  background-image: url("Polygon.svg");
+  /*background-image: url("Polygon.svg");*/
   height: 26px;
   width: 20px;
 }
 
 .rhap_play-pause-button_pause {
-  background-image: url("Union.svg");
+  /*background-image: url("Union.svg");*/
   height: 18px;
   width: 14px;
 }
@@ -142,4 +142,3 @@ code {
   outline: unset;
   border: unset;
 }
-
