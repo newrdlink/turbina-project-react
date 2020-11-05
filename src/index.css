@@ -35,6 +35,18 @@ code {
   width: 90%;
 }
 
+.player__current-time{
+  position: absolute;
+  bottom: 14px;
+  right:10px;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 26px;
+  color:#fff;
+}
+
+
 .rhap_container {
   margin: 0;
   padding: 0;
@@ -92,17 +104,6 @@ code {
   height: 3px;
 }
 
-.rhap_time{
-  position: absolute;
-  bottom: 14px;
-  right:10px;
-  font-size: 22px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 26px;
-  color:#fff;
-}
-
 /*изначальный цвет прогресс даунлоадинга*/
 .rhap_progress-bar-show-download {
   background-color: rgba(243, 243, 243, 0.3);
@@ -115,9 +116,9 @@ code {
 }
 
 .rhap_progress-container {
-  background: none !important;
-  box-shadow: none !important;
-  outline: none !important;
+  background: none;
+  box-shadow: none;
+  outline: none;
   width: 1000px;
 }
 

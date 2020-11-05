@@ -4,45 +4,52 @@ import AudioPlayer, {RHAP_UI} from 'react-h5-audio-player'
 
 function Header() {
 
-  const Play = <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  const Play = <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M18.47 11.3307C19.668 12.1211 19.668 13.8789 18.47 14.6693L3.10149 24.81C1.77177 25.6873 6.9507e-07 24.7337
-      7.64706e-07 23.1406L1.65123e-06 2.85939C1.72086e-06 1.2663 1.77177 0.312659 3.10149 1.19004L18.47 11.3307Z"
+      d="M14.3041 7.76283C15.232 8.34867 15.232 9.65133 14.3041 10.2372L2.40195 17.7525C1.37215 18.4027 -7.73515e-07
+      17.696 -7.21907e-07 16.5153L-6.48979e-08 1.48469C-1.32898e-08 0.304034 1.37215 -0.402717 2.40195
+      0.247521L14.3041 7.76283Z"
       fill="white"/>
   </svg>
 
-  const Pause = <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M1 0C0.447266 0 0 0.447266 0 1V17C0 17.5527 0.447266 18 1 18H3C3.55273 18 4 17.5527 4 17V1C4 0.447266
-          3.55273 0 3 0H1ZM11 0C10.4473 0 10 0.447266 10 1V17C10 17.5527 10.4473 18 11 18H13C13.5527 18 14 17.5527
-          14 17V1C14 0.447266 13.5527 0 13 0H11Z"
-          fill="white"/>
+  const Pause = <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="4" height="14" rx="1" fill="white"/>
+    <rect x="8" width="4" height="14" rx="1" fill="white"/>
   </svg>
 
-  const currentTimeHandler = () => {
-    const timeElement = document.querySelector('.rhap_time').innerHTML
-    console.log(timeElement)
+  const currentTimeHandler = (currentTime) => {
+    const hours = Math.floor(currentTime / 60 / 60);
+    const minutes = Math.floor(currentTime / 60) - (hours * 60);
+    let seconds = Math.round(currentTime % 60)
+    if (seconds < 10) seconds = '0' + seconds
+    if (hours === 0) {
+      document.querySelector('.player__current-time').innerHTML = `${minutes}:${seconds}`
+    } else {
+      document.querySelector('.player__current-time').innerHTML = `${hours}:${minutes}:${seconds}`
+    }
   }
 
   return (
     <div className="header">
       <h1 className="header__title">ABBA : I Have A Dream</h1>
+
       <div className="player">
         <div className="play-pause-button"/>
+        <div className="player__current-time">0:00</div>
         <AudioPlayer
           customProgressBarSection={
             [
               RHAP_UI.PROGRESS_BAR,
-              RHAP_UI.CURRENT_TIME,
             ]
           }
           layout="horizontal-reverse"
+          showDownloadProgress={false}
           showJumpControls={false}
           customVolumeControls={[]}
           customAdditionalControls={[]}
           customLoopControls={[]}
           src={Audio}
-          onListen={currentTime => currentTimeHandler()}
+          onListen={currentTime => currentTimeHandler(currentTime.target.currentTime)}
           style={{width: '100%'}}
           customIcons={{
             play: Play,
