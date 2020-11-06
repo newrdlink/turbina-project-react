@@ -16,7 +16,7 @@ code {
 .header {
   width: 100%;
   height: 100vh;
-  background-color: #2f9b9b;
+  background-color: #227979;
   margin: 0;
   padding: 0;
   position: relative;
@@ -27,17 +27,66 @@ code {
   padding: 0;
 }
 
-.player {
+.media {
+  border: 1px solid red;
   position: absolute;
-  top: 95%;
-  left: 20px;
-  transform: translateY(-100%);
-  width: 90%;
+  top: 60%;
+  left: 0;
+  /*transform: translateY(-100%);*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /*ширина*/
+  width: 80vw;
 }
 
+
+/*положение и размер полосы прокрутки*/
+.rhap_main {
+  border: 1px solid pink;
+  /*ширина*/
+  width: calc(80vw - 40px);
+  margin-left: 40px;
+
+}
+
+
+
+.media__player {
+  position: relative;
+}
+
+.media__current-track {
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 26px;
+  color:#fff;
+}
+
+.media__playlist {
+  margin-left: 50px;
+  height: 80px;
+  overflow: hidden;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 26px;
+  color:#fff;
+}
+
+
+.player {
+}
+
+/*положение таймера*/
 .player__current-time{
   position: absolute;
-  bottom: 14px;
+  bottom: 16px;
   right:10px;
   font-size: 22px;
   font-weight: 500;
@@ -46,6 +95,44 @@ code {
   color:#fff;
 }
 
+/*положение кнопок*/
+
+.rhap_play-pause-button {
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  margin: 0;
+  padding: 0;
+  font-size: 1px;
+}
+
+.rhap_play-pause-button_pause {
+}
+
+
+.rhap_progress-section {
+  display: unset;
+  flex-grow: 100;
+}
+
+
+.rhap_progress-container {
+  background: none;
+  box-shadow: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rhap_horizontal-reverse {
+  flex-direction: unset;
+}
+
+/*толщина и отступы прогресс-бара*/
+.rhap_progress-bar {
+  margin: 25px 0 0 0;
+  height: 3px;
+}
 
 .rhap_container {
   margin: 0;
@@ -77,32 +164,9 @@ code {
 }
 
 .rhap_progress-container {
-  margin: 0;
-  padding: 0;
+
 }
 
-.rhap_play-pause-button {
-  position: absolute;
-  bottom: 12px;
-  left: 10px;
-  margin: 0;
-  padding: 0;
-  font-size: 1px;
-  /*background-image: url("Polygon.svg");*/
-  height: 26px;
-  width: 20px;
-}
-
-.rhap_play-pause-button_pause {
-  /*background-image: url("Union.svg");*/
-  height: 18px;
-  width: 14px;
-}
-
-.rhap_progress-bar {
-  margin: 25px 0 0 -10px;
-  height: 3px;
-}
 
 /*изначальный цвет прогресс даунлоадинга*/
 .rhap_progress-bar-show-download {
@@ -113,13 +177,6 @@ code {
 .rhap_progress-filled {
   background-color: #fff;
   border-radius: 2px;
-}
-
-.rhap_progress-container {
-  background: none;
-  box-shadow: none;
-  outline: none;
-  width: 1000px;
 }
 
 .rhap_progress-indicator {
