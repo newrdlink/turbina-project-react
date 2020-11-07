@@ -9,6 +9,8 @@ const Media = () => {
         <p className="media__current-track">I Have A Dream</p>
         <Player />
       </div>
+      <button className="media__button-open"/>
+      <button className="media__button-track media__button-track_opened">Текст песни</button>
     </section>
   )
 }

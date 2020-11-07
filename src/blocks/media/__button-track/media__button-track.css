@@ -27,11 +27,13 @@
   outline: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .media__button-track {
     padding: 0 15px 0 20px;
-    grid-column: 1/4;
-    grid-row: 3;
-    max-height: 0;
+    /*grid-column: 1/4;*/
+    /*grid-row: 3;*/
+    /*max-height: 0;*/
+    height: 31px;
+    width: 240px;
   }
 }

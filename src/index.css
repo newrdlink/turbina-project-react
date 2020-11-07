@@ -41,31 +41,80 @@
 @import url("./blocks/form/__input-text/form__input-text.css");
 @import url("./blocks/form/__input-link/form__input-link.css");
 @import url("./blocks/form/__field-accept/form__field-accept.css");
+
+
 /*!!!!!!!!!!*/
+/*весь контейнер */
 .media2 {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 10px;
   transform: translateY(-100%);
   height: 45px;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
+  /*ширина контейнера*/
+  width: 1260px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media screen and (max-width: 1280px) {
+  .media2 {
+    width: calc(100vw - 20px);
+    left: 10px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .media2 {
+    left: 5px;
+    height: 60px;
+  }
+}
+
+/*положение и размер полосы прокрутки*/
+.rhap_main {
+  margin-left: 40px;
+
+}
+
+.media__player2 {
+  border: 1px solid yellow;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  /*ширина контенера*/
-  width: 80vw;
-}
-/*положение и размер полосы прокрутки*/
-.rhap_main {
-  /*border: 1px solid pink;*/
-  /*ширина полосы прокрутки*/
-  width: calc(80vw - 40px);
-  margin-left: 40px;
+  position: relative;
+  width: 1100px;
 }
 
-.media__player2 {
-  position: relative;
+.rhap_progress-bar {
+  margin: 25px 0 0 0;
+  height: 3px;
+  width: 1005px;
+}
+
+@media screen and (max-width: 1280px) {
+  .media__player2 {
+    width: calc(100vw - 180px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .rhap_progress-bar {
+    width: calc(100vw - 275px);
+  }
+}
+
+.rhap_progress-section {
+  border: 2px solid greenyellow;
+  display: unset;
+  flex-grow: unset;
+  flex-shrink: unset;
+  flex-basis: unset;
+  margin: 0 30px 0 0;
 }
 
 .media__current-track {
@@ -88,7 +137,72 @@
   font-style: normal;
   line-height: 26px;
   color:#fff;
+  order: 1;
 }
+
+.media__button-open {
+  order: 3
+}
+
+.media__button-track {
+  order: 2
+}
+
+
+@media screen and (max-width: 767px) {
+  .media__button-open {
+    order: 2
+  }
+
+  .media__button-track {
+    order: 3;
+
+
+  }
+
+  .media2 {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+
+
+
+.media__button-open {
+  height: 24px;
+  width: 24px;
+  align-self: center;
+  box-sizing: content-box;
+  padding: 0 20px 0 20px;
+  background: url(./images/Subtract.svg) no-repeat center;
+  border: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+.media__button-open:focus{
+  outline: none;
+}
+
+.media__button-open:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .media__button-open {
+    height: 16px;
+    width: 16px;
+    padding: 0 10px 0 10px;
+    background-size: contain;
+  }
+}
+
+/*text_playlist-button_320.svg*/
+/*background: url(./images/text_playlist-button_320.svg) no-repeat center;*/
+
 
 
 .player2 {
@@ -97,8 +211,8 @@
 /*положение таймера*/
 .player__current-time2{
   position: absolute;
-  bottom: 16px;
-  right:10px;
+  bottom: 30px;
+  right:15px;
   font-size: 22px;
   font-weight: 500;
   font-style: normal;
@@ -110,7 +224,7 @@
 
 .rhap_play-pause-button {
   position: absolute;
-  bottom: 12px;
+  bottom: 5px;
   left: 10px;
   margin: 0;
   padding: 0;
@@ -118,12 +232,6 @@
 }
 
 .rhap_play-pause-button_pause {
-}
-
-
-.rhap_progress-section {
-  display: unset;
-  flex-grow: 100;
 }
 
 
