@@ -11,6 +11,7 @@
 @import url(../media/__track/_type/media__track_type_release.css);
 
 .media {
+  border: 1px solid red;
   position: absolute;
   top: 100%;
   left: 0;

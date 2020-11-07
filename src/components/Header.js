@@ -28,7 +28,7 @@ function Header() {
     <section className="banner">
       <h1 className="banner__title"><img className="banner__img" src={mainBanner} alt="баннер"/></h1>
     </section>
-    {<Media/>}
+    <Media/>
   </header>)
 }
 
