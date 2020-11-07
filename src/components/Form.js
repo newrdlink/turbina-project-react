@@ -1,4 +1,6 @@
-function Form() {
+import React from 'react'
+
+const Form = () => {
   return (<form className="form">
     <h2 className="form__header article__title">ФОРМА.</h2>
     <p className="article__paragraph">Заполняя эту форму, вы становитесь частью проекта.</p>
