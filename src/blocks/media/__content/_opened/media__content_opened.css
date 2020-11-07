@@ -1,0 +1,4 @@
+.media__content_opened {
+  display: block;
+  max-height: 110px;
+}

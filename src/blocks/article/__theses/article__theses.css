@@ -1,0 +1,5 @@
+.article__theses {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding: 0 0 1px 20px;
+}

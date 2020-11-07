@@ -1,38 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #454845;
-}
+@import url("./vendor/normalize.css");
+@import url("./blocks/root/root.css");
+@import url("./blocks/page/page.css");
+@import url("./vendor/fonts/inter.css");
+@import url("./blocks/header/header.css");
+@import url("./blocks/header/__logo/header__logo.css");
+@import url("./blocks/menu/__resources/menu__resources.css");
+@import url("./blocks/menu/__resource-link/menu__resource-link.css");
+@import url("./blocks/menu/__resource-link/_visible/menu__resource-link_visible.css");
+@import url("./blocks/menu/__resource/menu__resource.css");
+@import url("./blocks/menu/__button/menu__button.css");
+@import url("./blocks/menu/__close-button/menu__close-button.css");
+@import url("./blocks/menu/__open-streamings/menu__open-streamings.css");
+@import url("./blocks/menu/__button/_invisible/menu__button_invisible.css");
+@import url("./blocks/banner/banner.css");
+@import url("./blocks/banner/__title/banner__title.css");
+@import url("./blocks/banner/__img/banner__img.css");
+@import url("./blocks/media/media.css");
+@import url("./blocks/media/__button-open/_active/media__button-open_active.css");
+@import url("./blocks/media/__track/_type/media__track_type_text-song.css");
+@import url("./blocks/main/main.css");
+@import url("./blocks/section-title/section-title.css");
+@import url("./blocks/section-subtitle/section-subtitle.css");
+@import url("./blocks/article/article.css");
+@import url("./blocks/article/__title/article__title.css");
+@import url("./blocks/article/__paragraph/article__paragraph.css");
+@import url("./blocks/article/__paragraph/_position/article__paragraph_position.css");
+@import url("./blocks/article/__theses/article__theses.css");
+@import url("./blocks/article/__thesis/article__thesis.css");
+@import url("./blocks/footer/footer.css");
+@import url("./blocks/footer/__author/footer__author.css");
+@import url("./blocks/footer/__author-link/footer__author-link.css");
+@import url("./blocks/form/form.css");
+@import url("./blocks/form/__field-name/form__field-name.css");
+@import url("./blocks/form/__field-lyrics/form__field-lyrics.css");
+@import url("./blocks/form/__input/form__input.css");
+@import url("./blocks/form/__input/_position/form__input_position_lyrics.css");
+@import url("./blocks/form/__input/_position/form__input_position_mail.css");
+@import url("./blocks/form/__input/_position/form__input_position_tel.css");
+@import url("./blocks/form/__submit-button/form__submit-button.css");
+@import url("./blocks/form/__input-text/form__input-text.css");
+@import url("./blocks/form/__input-link/form__input-link.css");
+@import url("./blocks/form/__field-accept/form__field-accept.css");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
-.header {
-  width: 100%;
-  height: 100vh;
-  background-color: #227979;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
 
-.header__title {
-  margin: 0 0 40px 0;
-  padding: 0;
-}
 
-.media {
-  border: 1px solid red;
+
+
+
+
+
+
+
+
+
+
+
+
+/*!!!!!!!!!!*/
+
+.media2 {
   position: absolute;
-  top: 60%;
+  top: 100%;
   left: 0;
-  /*transform: translateY(-100%);*/
+  transform: translateY(-100%);
+  height: 45px;
+  /*border: 1px solid red;*/
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -44,16 +77,13 @@ code {
 
 /*положение и размер полосы прокрутки*/
 .rhap_main {
-  border: 1px solid pink;
+  /*border: 1px solid pink;*/
   /*ширина полосы прокрутки*/
   width: calc(80vw - 40px);
   margin-left: 40px;
-
 }
 
-
-
-.media__player {
+.media__player2 {
   position: relative;
 }
 
@@ -68,7 +98,7 @@ code {
   color:#fff;
 }
 
-.media__playlist {
+.media__playlist2 {
   margin-left: 50px;
   height: 80px;
   overflow: hidden;
@@ -80,11 +110,11 @@ code {
 }
 
 
-.player {
+.player2 {
 }
 
 /*положение таймера*/
-.player__current-time{
+.player__current-time2{
   position: absolute;
   bottom: 16px;
   right:10px;
@@ -164,9 +194,7 @@ code {
 }
 
 .rhap_progress-container {
-
 }
-
 
 /*изначальный цвет прогресс даунлоадинга*/
 .rhap_progress-bar-show-download {

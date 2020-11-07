@@ -1,0 +1,10 @@
+.form__input-link {
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.form__input-link:visited {
+  /*если потребуется*/
+  color: grey;
+}

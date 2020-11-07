@@ -1,0 +1,6 @@
+@media screen and (max-width: 400px) {
+  .form__input_position_tel {
+    padding: 0 0 0 0;
+    margin: 13px 0 0 0;
+  }
+}

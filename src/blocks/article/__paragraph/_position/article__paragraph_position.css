@@ -1,0 +1,11 @@
+.article__paragraph_position {
+  margin: 22px 0 0 var(--left-indent);
+}
+
+
+@media screen and (max-width: 400px) {
+  .article__paragraph_position {
+    margin: 32px 0 0 var(--left-indent);
+  }
+}
+
