@@ -1,0 +1,30 @@
+.media__title-track {
+  margin: 0 0 10px 0;
+  grid-column: 1;
+  grid-row: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1030px) {
+  .media__title-track {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .media__title-track {
+    grid-column: 1/3;
+    font-size: 14px;
+    line-height: 19px;
+    padding-left: 30px;
+  }
+}

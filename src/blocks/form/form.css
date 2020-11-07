@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+@media screen and (max-width: 740px) {
+  .form {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    width: var(--smartphone-width-l);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form {
+    width: var(--smartphone-width-s);
+  }
+}

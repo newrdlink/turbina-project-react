@@ -1,0 +1,32 @@
+.media__button-open {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  grid-column: 3;
+  grid-row: 1/3;
+  align-self: center;
+  box-sizing: content-box;
+  padding: 0 20px 0 20px;
+  background: url(../../../images/Subtract.svg) no-repeat center;
+  border: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+.media__button-open:focus{
+  outline: none;
+}
+
+.media__button-open:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .media__button-open {
+    height: 16px;
+    width: 16px;
+    padding: 0 10px 0 10px;
+    background-size: contain;
+    align-self: flex-start;
+  }
+}

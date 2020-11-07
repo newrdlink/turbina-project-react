@@ -1,0 +1,7 @@
+.media__button-track_opened {
+  visibility: visible;
+  opacity: 1;
+  /* transition: opacity .4s ease-in-out; */
+  transition-property: max-height, opacity;
+  max-height: 30px;
+}
