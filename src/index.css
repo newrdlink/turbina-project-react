@@ -48,7 +48,7 @@
 .media2 {
   position: absolute;
   top: 100%;
-  left: 10px;
+  left: 15px;
   transform: translateY(-100%);
   height: 45px;
   border: 1px solid red;
@@ -61,7 +61,7 @@
 
 @media screen and (max-width: 1280px) {
   .media2 {
-    width: calc(100vw - 20px);
+    width: calc(100vw - 30px);
     left: 10px;
   }
 }
@@ -155,6 +155,7 @@
   }
 
   .media__button-track {
+    margin: 0 auto;
     order: 3;
 
 
@@ -163,7 +164,7 @@
   .media2 {
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
 }
