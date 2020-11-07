@@ -1,0 +1,7 @@
+@media screen and (max-width: 767px) {
+  .menu__resource-link_visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity .5s linear;
+  }
+}

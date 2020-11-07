@@ -1,0 +1,13 @@
+.menu__resource {
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__resource {
+    margin-bottom: 6px;
+  }
+}
+
+.menu__resource:last-of-type {
+  margin-bottom: 0;
+}

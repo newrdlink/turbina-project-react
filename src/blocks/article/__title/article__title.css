@@ -1,0 +1,33 @@
+.article__title {
+  margin: 95px 0 0 var(--left-indent);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 50px;
+  line-height: 51px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .article__title {
+    margin: 85px 0 0 var(--left-indent);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .article__title {
+    font-size: 42px;
+    margin: 79px 0 0 var(--left-indent);
+  }
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .article__title {
+    font-size: 32px;
+    line-height: 39px;
+    margin: 59px 0 0 var(--left-indent);
+  }
+}
+

@@ -1,0 +1,16 @@
+.article__thesis {
+  /*list-style-type: '\2012\a0';*/
+  margin: 0 0 15px -2px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .article__thesis {
+    margin: 0 0 14px -2px;
+  }
+}
+
+
+.article__thesis:last-child {
+  margin-bottom: 0;
+}
