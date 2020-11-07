@@ -45,6 +45,14 @@
 
 /*!!!!!!!!!!*/
 
+.media__player3 {
+  border: 1px solid orange;
+width: 70%;
+
+  /*margin-top: 50px;*/
+}
+
+
 .media2 {
   position: absolute;
   top: 100%;

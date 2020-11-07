@@ -1,13 +1,23 @@
 .media__player {
+  box-sizing: border-box;
+  border: 1px solid greenyellow;
   grid-column: 1;
   grid-row: 2;
   margin-bottom: 20px;
   color: aliceblue;
   text-overflow: ellipsis;
-  overflow: hidden;
+  /*overflow: hidden;*/
   white-space: nowrap;
   font-size: 12px;
   padding-left: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 70%;
+  /*height: 150px;*/
+  padding-bottom: 20px;
+  /*align-items: end;*/
 }
 
 @media screen and (max-width: 500px) {

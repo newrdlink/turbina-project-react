@@ -6,12 +6,12 @@ const Media = () => {
   return (
     <section className="media">
       <p className="media__title-track">№ 7 Контур — Хадн Дадн feat. Варя Карпова и Федя Быстров № 7</p>
-      {/*<div className="media__player">*/}
+      <div className="media__player">
         <Player />
-      {/*</div>*/}
-      <button className="media__button-track">Текст песни</button>
+      </div>
+      <button className="media__button-track media__button-track_opened">Текст песни</button>
       <button className="media__button-open"/>
-      <ul className="media__content">
+      <ul className="media__content media__content_opened">
         <li className="media__track media__track_type_release">Релизы:</li>
         <li className="media__track">№ 1 Поезия — Мукулатура feat. Саша Петров</li>
         <li className="media__track">№ 2 Лодка — СБПЧ feat. Маруся Романова</li>

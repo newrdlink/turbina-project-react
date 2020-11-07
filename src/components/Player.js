@@ -30,7 +30,7 @@ function Player() {
   }
 
   return (
-    <div className="media__player">
+    <div className="media__player3">
       <div className="play-pause-button"/>
       <div className="player__current-time2">0:00</div>
       <AudioPlayer
