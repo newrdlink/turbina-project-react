@@ -1,0 +1,22 @@
+.form__input_type_checked {
+    /* position: absolute;
+    left: 0;
+    top: 10px;    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    border: 1px solid rgb(148, 148, 148); */
+}
+
+.form__input_type_checked::before {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    border: 1px solid rgb(148, 148, 148);
+}

@@ -1,0 +1,6 @@
+.form__input-error_place_checkbox {
+    left: 50px;
+    top: 50%;
+    transform: translateY(-75%);
+    white-space: nowrap;
+}

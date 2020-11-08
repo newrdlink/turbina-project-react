@@ -1,11 +1,12 @@
 .form__input {
+  position: relative;
   border: 0;
   width: 600px;
-  min-height: 60px;
+  min-height: 70px;
   box-sizing: border-box;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000;
   background-color: transparent;
-  margin: 10px 0 0 51px;
+  margin: 0;
   padding: 0;
   font-size: 16px;
   font-style: normal;
@@ -32,7 +33,6 @@
     width: var(--smartphone-width-l);
   }
 }
-
 
 @media screen and (max-width: 400px) {
   .form__input {
