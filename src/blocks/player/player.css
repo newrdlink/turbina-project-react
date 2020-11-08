@@ -1,8 +1,6 @@
-
 /*положение и размер полосы прокрутки*/
 .rhap_main {
   margin-left: 40px;
-
 }
 
 .rhap_progress-bar {
@@ -17,7 +15,6 @@
     width: calc(100vw - 295px);
   }
 }
-
 
 @media screen and (max-width: 767px) {
   .rhap_progress-bar {
@@ -34,7 +31,6 @@
   margin: 0 0 0 0;
 }
 
-
 .media__playlist2 {
   margin-left: 50px;
   height: 80px;
@@ -48,7 +44,6 @@
 }
 
 /*положение кнопок*/
-
 .rhap_play-pause-button {
   position: absolute;
   bottom: 5px;
@@ -60,7 +55,6 @@
 
 .rhap_play-pause-button_pause {
 }
-
 
 .rhap_progress-container {
   background: none;
