@@ -1,7 +1,15 @@
 .media__button-track_opened {
   visibility: visible;
   opacity: 1;
-  /* transition: opacity .4s ease-in-out; */
+   /*transition: opacity .4s ease-in-out; */
   transition-property: max-height, opacity;
   max-height: 30px;
+
+}
+
+@media screen and (max-width: 767px) {
+  .media__button-track {
+    margin: 0 auto;
+    order: 3;
+  }
 }

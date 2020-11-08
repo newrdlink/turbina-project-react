@@ -23,16 +23,17 @@ function Player() {
     let seconds = Math.round(currentTime % 60)
     if (seconds < 10) seconds = '0' + seconds
     if (hours === 0) {
-      document.querySelector('.player__current-time2').innerHTML = `${minutes}:${seconds}`
+      document.querySelector('.player__current-time').innerHTML = `${minutes}:${seconds}`
     } else {
-      document.querySelector('.player__current-time2').innerHTML = `${hours}:${minutes}:${seconds}`
+      document.querySelector('.player__current-time').innerHTML = `${hours}:${minutes}:${seconds}`
     }
   }
 
   return (
-    <div className="player2">
-      <div className="play-pause-button"/>
-      <div className="player__current-time2">0:00</div>
+    // <div className="player">
+    <div className="player">
+      <div className="player__control-button"/>
+      <div className="player__current-time">0:00</div>
       <AudioPlayer
         customProgressBarSection={
           [

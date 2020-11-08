@@ -4,8 +4,8 @@ import Player from './Player.js'
 const Media = () => {
 
   return (
-    <section className="media2">
-      <div className="media__player2">
+    <section className="media">
+      <div className="media__player">
         <p className="media__current-track">I Have A Dream</p>
         <Player />
       </div>

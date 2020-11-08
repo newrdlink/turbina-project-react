@@ -16,6 +16,8 @@
   visibility: hidden;
   transition: .3s ease-in-out;
   transition-property: max-height, opacity;
+  margin: 0 10px 0 0;
+  order: 2
 }
 
 .media__button-track:hover {
@@ -29,6 +31,7 @@
 
 @media screen and (max-width: 767px) {
   .media__button-track {
+    margin: 50px 0;
     padding: 0 15px 0 20px;
     /*grid-column: 1/4;*/
     /*grid-row: 3;*/
