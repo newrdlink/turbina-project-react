@@ -1,15 +1,14 @@
 .media__button-open {
-  position: relative;
   height: 24px;
   width: 24px;
-  grid-column: 3;
-  grid-row: 1/3;
-  align-self: center;
-  box-sizing: content-box;
-  padding: 0 20px 0 20px;
   background: url(../../../images/Subtract.svg) no-repeat center;
   border: 0;
   transition: opacity .2s ease-in-out;
+  order: 3;
+  /*border: 1px solid #61dafb;*/
+  align-self: center;
+  margin: 0 0 0 0;
+  padding: 0 20px 0 20px;
 }
 
 .media__button-open:focus{
@@ -21,12 +20,17 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  .media__button-open {
+    order: 2
+  }
+}
+
 @media screen and (max-width: 500px) {
   .media__button-open {
     height: 16px;
     width: 16px;
-    padding: 0 10px 0 10px;
     background-size: contain;
-    align-self: flex-start;
   }
 }
+

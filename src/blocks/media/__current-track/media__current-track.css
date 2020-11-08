@@ -1,0 +1,10 @@
+.media__current-track {
+  position: absolute;
+  bottom: 15px;
+  left: 70px;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 26px;
+  color:#fff;
+}

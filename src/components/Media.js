@@ -1,5 +1,6 @@
 import React from 'react'
 import Player from './Player.js'
+import MediaContent from './MediaContent.js'
 
 const Media = () => {
 
@@ -7,10 +8,10 @@ const Media = () => {
     <section className="media">
       <p className="media__title-track">№ 7 Контур — Хадн Дадн feat. Варя Карпова и Федя Быстров № 7</p>
       {/*<div className="media__player">*/}
-        <Player />
+      <Player />
       {/*</div>*/}
       <button className="media__button-track">Текст песни</button>
-      <button className="media__button-open"/>
+      <button className="media__button-open" />
       <ul className="media__content">
         <li className="media__track media__track_type_release">Релизы:</li>
         <li className="media__track">№ 1 Поезия — Мукулатура feat. Саша Петров</li>

@@ -1,0 +1,10 @@
+.player__current-time{
+  position: absolute;
+  bottom: 30px;
+  right:15px;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 26px;
+  color:#fff;
+}
