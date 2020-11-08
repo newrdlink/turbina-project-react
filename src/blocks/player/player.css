@@ -1,0 +1,145 @@
+/*положение и размер полосы прокрутки*/
+.rhap_main {
+  margin-left: 40px;
+  width: 100%;
+}
+
+
+/*???????????????????????*/
+.rhap_progress-bar {
+  margin: 25px 0 0 0;
+  height: 3px;
+  width: 1140px;
+}
+
+@media screen and (max-width: 1280px) {
+  .rhap_progress-bar {
+    width: calc(100vw - 135px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rhap_progress-bar {
+    width: calc(100vw - 128px);
+  }
+}
+
+
+/*/////////////////////////////////////*/
+
+.rhap_progress-section {
+  /*border: 2px solid greenyellow;*/
+  display: unset;
+  flex-grow: unset;
+  flex-shrink: unset;
+  flex-basis: unset;
+  margin: 0 0 0 0;
+}
+
+.media__playlist2 {
+  margin-left: 50px;
+  height: 80px;
+  overflow: hidden;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 26px;
+  color:#fff;
+  order: 1;
+}
+
+/*положение кнопок*/
+.rhap_play-pause-button {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  margin: 0;
+  padding: 0;
+  font-size: 1px;
+}
+
+.rhap_play-pause-button_pause {
+}
+
+.rhap_progress-container {
+  background: none;
+  box-shadow: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rhap_horizontal-reverse {
+  flex-direction: unset;
+}
+
+/*толщина и отступы прогресс-бара*/
+/*.rhap_progress-bar {*/
+/*  margin: 25px 0 0 0;*/
+/*  height: 3px;*/
+/*}*/
+
+.rhap_container {
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  background: unset;
+  box-shadow: unset;
+  outline: unset;
+  position: relative;
+  line-height: 0;
+}
+
+.rhap_additional-controls {
+  display: none;
+}
+
+.rhap_volume-controls {
+  display: none;
+}
+
+.rhap_controls-section {
+  margin: 0;
+  padding: 0;
+}
+
+.rhap_horizontal-reverse .rhap_controls-section {
+  margin: 0;
+  width: 0;
+}
+
+.rhap_progress-container {
+}
+
+/*изначальный цвет прогресс даунлоадинга*/
+.rhap_progress-bar-show-download {
+  background-color: rgba(243, 243, 243, 0.3);
+}
+
+/*положение ползунка*/
+.rhap_progress-filled {
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.rhap_progress-indicator {
+  background: unset;
+  box-shadow: unset;
+  outline: unset;
+  border: unset;
+}
+
+.rhap_progress-indicator {
+  box-sizing: border-box;
+  position: unset;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  margin: 0;
+  background: unset;
+  border-radius: unset;
+  background: unset;
+  box-shadow: unset;
+  outline: unset;
+  border: unset;
+}

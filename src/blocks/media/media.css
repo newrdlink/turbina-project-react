@@ -9,17 +9,25 @@
 @import url(../media/__content/_opened/media__content_opened.css);
 @import url(../media/__track/media__track.css);
 @import url(../media/__track/_type/media__track_type_release.css);
+@import url(../media/__current-track/media__current-track.css);
 
 .media {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 15px;
   transform: translateY(-100%);
-  width: 100%;
-  /* для примера */
-  /* height: 50px; */
-  /* background-color: teal; */
-  display: grid;
-  grid-template-columns: 1fr min-content min-content;
-  grid-template-rows: min-content min-content min-content min-content;
+  height: 45px;
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+  .media {
+    left: 5px;
+    height: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
