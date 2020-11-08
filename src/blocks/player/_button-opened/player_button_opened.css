@@ -1,12 +1,12 @@
 .rhap_progress-bar_opened {
   margin: 25px 0 0 0;
   height: 3px;
-  width: 1140px;
+  width: 980px;
 }
 
 @media screen and (max-width: 1280px) {
   .rhap_progress-bar_opened {
-    width: calc(100vw - 135px);
+    width: calc(100vw - 295px);
   }
 }
 

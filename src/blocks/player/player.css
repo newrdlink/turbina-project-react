@@ -1,18 +1,20 @@
 /*положение и размер полосы прокрутки*/
 .rhap_main {
   margin-left: 40px;
+  width: 100%;
 }
 
+
+/*???????????????????????*/
 .rhap_progress-bar {
   margin: 25px 0 0 0;
   height: 3px;
-  /*!!!!!!!!!!!!!!!!!!!!!!!!!*/
-  width: 980px;
+  width: 1140px;
 }
 
 @media screen and (max-width: 1280px) {
   .rhap_progress-bar {
-    width: calc(100vw - 295px);
+    width: calc(100vw - 135px);
   }
 }
 
@@ -21,6 +23,9 @@
     width: calc(100vw - 128px);
   }
 }
+
+
+/*/////////////////////////////////////*/
 
 .rhap_progress-section {
   /*border: 2px solid greenyellow;*/
@@ -69,10 +74,10 @@
 }
 
 /*толщина и отступы прогресс-бара*/
-.rhap_progress-bar {
-  margin: 25px 0 0 0;
-  height: 3px;
-}
+/*.rhap_progress-bar {*/
+/*  margin: 25px 0 0 0;*/
+/*  height: 3px;*/
+/*}*/
 
 .rhap_container {
   margin: 0;

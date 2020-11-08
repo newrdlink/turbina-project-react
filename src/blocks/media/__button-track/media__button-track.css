@@ -1,7 +1,5 @@
 .media__button-track {
   height: 40px;
-  grid-column: 2;
-  grid-row: 1/3;
   align-self: center;
   text-decoration: none;
   color: #fff;
@@ -13,7 +11,8 @@
   border: 2px solid #fff;
   border-radius: 30px;
   white-space: nowrap;
-  visibility: hidden;
+  /*visibility: hidden;*/
+  display: none;
   transition: .3s ease-in-out;
   transition-property: max-height, opacity;
   margin: 0 10px 0 0;
@@ -33,9 +32,6 @@
   .media__button-track {
     margin: 50px 0;
     padding: 0 15px 0 20px;
-    /*grid-column: 1/4;*/
-    /*grid-row: 3;*/
-    /*max-height: 0;*/
     height: 31px;
     width: 240px;
   }

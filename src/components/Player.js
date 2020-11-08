@@ -55,9 +55,7 @@ function Player() {
     }
   }
 
-  return (
-    // <div className="player">
-    <div className="player">
+  return (<div className="player">
       <div className="player__control-button"/>
       <div className="player__current-time">0:00</div>
       <AudioPlayer
@@ -80,8 +78,7 @@ function Player() {
           pause: getPauseIcon()
         }}
       />
-    </div>
-  )
+    </div>)
 }
 
 export default Player

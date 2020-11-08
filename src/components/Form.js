@@ -32,7 +32,7 @@ const Form = () => {
     </label>
     <label className="form__field-accept" htmlFor="form-field-accept">
       <input className="form__input-accept" type="checkbox" id="form-field-accept" name="accept" value="" />
-      <span className="form__input-text">Согласен с<a href="/ru.ru" className="form__input-link">офертой</a></span>
+      <span className="form__input-text">Согласен с<a href="#" className="form__input-link">офертой</a></span>
       <span className="form__field-error" />
     </label>
     <button type="submit" className="form__submit-button">Отправить форму</button>
