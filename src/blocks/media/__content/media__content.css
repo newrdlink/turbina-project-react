@@ -1,12 +1,11 @@
 .media__content {
-  list-style: none;
-  max-height: 0;
-  margin: 0;
+  border: 1px solid red;
+  height: 0;
+  width: 1050px;
+  margin: 20px;
   overflow: hidden;
-  grid-column: 1/3;
-  grid-row: 4;
   transition: .3s ease-in;
-  transition-property: max-height overflow;
+  transition-property: height;
 }
 
 .media__content:hover {

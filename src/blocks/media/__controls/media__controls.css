@@ -1,0 +1,12 @@
+.media__controls {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+  .media__controls {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -1,10 +1,9 @@
 import AudioPlayer, {RHAP_UI} from 'react-h5-audio-player'
-import Audio from "../abba.mp3";
 import React from "react";
 import useWindowSize from './WindowSize'
 
 
-function Player() {
+function Player(props) {
 
   const size = useWindowSize()
 
@@ -70,7 +69,7 @@ function Player() {
         customVolumeControls={[]}
         customAdditionalControls={[]}
         customLoopControls={[]}
-        src={Audio}
+        src={props.playlist[0].src}
         onListen={currentTime => currentTimeHandler(currentTime.target.currentTime)}
         style={{width: '100%'}}
         customIcons={{
