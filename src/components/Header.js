@@ -5,24 +5,6 @@ import mainBanner from "../images/turbina.svg";
 
 function Header() {
 
-/*
-  const [isLyricOpen, setIsLyricOpen] = React.useState(true)
-
-  const contentTypeHandler = () => {
-    if (document.querySelector(".media__button-track").innerHTML === "Текст песни") {
-      document.querySelector(".media__button-track").innerHTML = "Релизы"
-      setIsLyricOpen(false);
-    } else {
-      document.querySelector(".media__button-track").innerHTML = "Текст песни"
-      setIsLyricOpen(true);
-    }
-  }
-  */
-
-
-
-
-
 //функция открытия стримингов
   const addMenu = () => {
     document.querySelector('.menu__open-streamings').parentNode.classList.add('menu__resource_invisible');
