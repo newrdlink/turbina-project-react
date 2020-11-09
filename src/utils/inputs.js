@@ -8,9 +8,9 @@ const initialInputsForm = [
         type: 'text',
         autocomplete: 'off',
         label: 'Имя и фамилия автора',
-        maxlenght: 20,
+        maxlenght: 25,
         minlength: 2,
-        pattern: "[А-Я]{1}[А-Яа-яЁё]{1,}" //только русская буква
+        pattern: "^[А-ЯЁ][а-яё]* [А-ЯЁ][а-яё]*$"
     },
     {
         id: 2,
@@ -52,7 +52,7 @@ const initialInputsForm = [
         label: '',
         accept: " Согласен с ",
         linkTitle: "офертой",
-        link: "https://ya.ru" 
+        link: "https://ya.ru"
     },
 
 ]
