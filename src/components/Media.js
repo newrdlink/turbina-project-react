@@ -17,14 +17,12 @@ const Media = () => {
     }
   }
 
-
   // эту функцию надо будет переделать
   const mediaContentVisibilityHandler = () => {
     document.querySelector(".rhap_progress-bar").classList.toggle('rhap_progress-bar_opened');
     document.querySelector(".media__button-track").classList.toggle('media__button-track_opened');
     document.querySelector(".media__content").classList.toggle('media__content_opened')
     document.querySelector(".media__button-open").classList.toggle('media__button-open_active')
-
   }
 
   return (
