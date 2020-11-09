@@ -5,25 +5,26 @@ import playlist from '../utils/playlist.js'
 
 const Media = () => {
 
-  let isLyric = true
+  const [isLyricOpen, setIsLyricOpen] = React.useState(true)
+
+  const contentTypeHandler = () => {
+    if (document.querySelector(".media__button-track").innerHTML === "Текст песни") {
+      document.querySelector(".media__button-track").innerHTML = "Релизы"
+      setIsLyricOpen(false);
+    } else {
+      document.querySelector(".media__button-track").innerHTML = "Текст песни"
+      setIsLyricOpen(true);
+    }
+  }
+
+
   // эту функцию надо будет переделать
   const mediaContentVisibilityHandler = () => {
     document.querySelector(".rhap_progress-bar").classList.toggle('rhap_progress-bar_opened');
     document.querySelector(".media__button-track").classList.toggle('media__button-track_opened');
     document.querySelector(".media__content").classList.toggle('media__content_opened')
-  }
+    document.querySelector(".media__button-open").classList.toggle('media__button-open_active')
 
-
-
-  const contentTypeHandler = () => {
-    console.log('contentTypeHandler')
-    if (document.querySelector(".media__button-track").innerHTML === "Текст песни") {
-      document.querySelector(".media__button-track").innerHTML = "Релизы"
-      isLyric = false;
-    } else {
-      document.querySelector(".media__button-track").innerHTML = "Текст песни"
-      isLyric = true;
-    }
   }
 
   return (
@@ -37,7 +38,7 @@ const Media = () => {
         <button className="media__button-track" onClick={contentTypeHandler}>Текст песни</button>
       </div>
       <div className="media__content">
-        <MediaContent playlist={playlist} isLyric={isLyric} />
+        <MediaContent playlist={playlist} isLyricOpen={isLyricOpen} />
       </div>
     </section>
   )

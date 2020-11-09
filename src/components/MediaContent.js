@@ -1,8 +1,9 @@
 import React from 'react'
+import Song from "./Song";
 
 function MediaContent(props) {
-  console.log(props.isLyric)
-  if (props.isLyric) {
+  console.log(props.isLyricOpen)
+  if (props.isLyricOpen) {
     return (<>
       <div className="media__content-text">
         {props.playlist[0].lyrics_text}
@@ -10,15 +11,19 @@ function MediaContent(props) {
     </>)
   } else {
     return (<>
-      <div className="media__content-text">
-        {props.playlist[0].lyrics}
-      </div>
+      <ul className="media__content-playlist">
+        {props.playlist.map((song) => <Song key={song.track_id} {...song} />)}
+      </ul>
     </>)
   }
-
 }
 
 export default MediaContent
+
+  // {
+  //   cards.map((card) => <Card key={card._id} {...card} onCardClick={props.onCardClick} />)
+  // }
+
 
 
 {/*<ul className="media__content media__content_opened">*/

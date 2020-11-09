@@ -9,6 +9,8 @@
 @import url(../media/__content/media__content.css);
 @import url(../media/__content/_opened/media__content_opened.css);
 @import url(../media/__content-text/media__content-text.css);
+@import url(../media/__content-playlist/media__content-playlist.css);
+@import url(../media/__content-playlist-item/media__content-playlist-item.css);
 @import url(../media/__track/media__track.css);
 @import url(../media/__track/_type/media__track_type_release.css);
 @import url(../media/__current-track/media__current-track.css);
