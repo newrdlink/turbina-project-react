@@ -1,0 +1,19 @@
+.form__input_type_checkbox {
+    position: relative;
+    width: 0;
+    height: 0;
+    outline: none;
+    border: 0;    
+    margin: 40px 0;
+}
+
+.form__input_type_checkbox::before {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;    
+    border: 1px solid rgb(148, 148, 148);
+}

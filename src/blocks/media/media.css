@@ -17,6 +17,7 @@
 @import url(../media/__current-track/media__current-track.css);
 
 .media {
+  border: 1px solid red;
   position: absolute;
   top: 100%;
   left: 15px;
