@@ -52,6 +52,6 @@
 @import url("./blocks/form/__input-link/form__input-link.css");
 @import url("./blocks/form/__field-accept/form__field-accept.css");
 @import url("./blocks/player/__current-time/player__current-time.css");
-@import url("./blocks/player/player.css");
-@import url("./blocks/player/_button-opened/player_progress-bar.css");
+/*@import url("./blocks/player/player.css");*/
+/*@import url("./blocks/player/_button-opened/player_progress-bar.css");*/
 @import url("./blocks/player/__control-button/player__control-button.css");

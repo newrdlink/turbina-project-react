@@ -1,6 +1,7 @@
 .media__controls {
   display: flex;
   flex-direction: row;
+  border: 1px solid red;
 }
 
 @media screen and (max-width: 767px) {

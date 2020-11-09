@@ -58,26 +58,34 @@ function Player(props) {
     <div className="player__control-button"/>
     <div className="player__current-time">0:00</div>
     <AudioPlayer
-      customProgressBarSection={
-        [
-          RHAP_UI.PROGRESS_BAR,
-        ]
-      }
-      layout="horizontal-reverse"
-      showDownloadProgress={false}
-      showJumpControls={false}
-      customVolumeControls={[]}
-      customAdditionalControls={[]}
-      customLoopControls={[]}
-      src={props.playlist[0].src}
-      onListen={currentTime => currentTimeHandler(currentTime.target.currentTime)}
-      style={{width: '100%'}}
-      customIcons={{
-        play: getPlayIcon(),
-        pause: getPauseIcon()
-      }}
+
     />
   </div>)
 }
 
 export default Player
+
+
+
+// <AudioPlayer
+// customProgressBarSection={
+//   [
+//     RHAP_UI.PROGRESS_BAR,
+// ]
+// }
+// layout="horizontal-reverse"
+// showDownloadProgress={false}
+// showJumpControls={false}
+// customVolumeControls={[]}
+// customAdditionalControls={[]}
+// customLoopControls={[]}
+// src={props.playlist[0].src}
+// onListen={currentTime => currentTimeHandler(currentTime.target.currentTime)}
+// style={{
+//   width: '500px'
+// }}
+// customIcons={{
+//   play: getPlayIcon(),
+//     pause: getPauseIcon()
+// }}
+// />
