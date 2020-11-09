@@ -1,47 +1,43 @@
 import React from 'react'
 import Player from './Player.js'
 import MediaContent from './MediaContent.js'
+import playlist from '../utils/playlist.js'
 
 const Media = () => {
 
+  const [isLyricOpen, setIsLyricOpen] = React.useState(true)
+
+  const contentTypeHandler = () => {
+    if (document.querySelector(".media__button-track").innerHTML === "Текст песни") {
+      document.querySelector(".media__button-track").innerHTML = "Релизы"
+      setIsLyricOpen(false);
+    } else {
+      document.querySelector(".media__button-track").innerHTML = "Текст песни"
+      setIsLyricOpen(true);
+    }
+  }
+
+  // эту функцию надо будет переделать
+  const mediaContentVisibilityHandler = () => {
+    document.querySelector(".rhap_progress-bar").classList.toggle('rhap_progress-bar_opened');
+    document.querySelector(".media__button-track").classList.toggle('media__button-track_opened');
+    document.querySelector(".media__content").classList.toggle('media__content_opened')
+    document.querySelector(".media__button-open").classList.toggle('media__button-open_active')
+  }
+
   return (
     <section className="media">
-      <p className="media__title-track">№ 7 Контур — Хадн Дадн feat. Варя Карпова и Федя Быстров № 7</p>
-      {/*<div className="media__player">*/}
-      <Player />
-      {/*</div>*/}
-      <button className="media__button-track">Текст песни</button>
-      <button className="media__button-open" />
-      <ul className="media__content">
-        <li className="media__track media__track_type_release">Релизы:</li>
-        <li className="media__track">№ 1 Поезия — Мукулатура feat. Саша Петров</li>
-        <li className="media__track">№ 2 Лодка — СБПЧ feat. Маруся Романова</li>
-        <li className="media__track">№ 3 Кирпичи — Инди группа feat. Пётр Сковородников</li>
-        <li className="media__track">№ 4 Поезия — Мукулатура feat. Саша Петров</li>
-        <li className="media__track">№ 5 Лодка — СБПЧ feat. Маруся Романова</li>
-        <li className="media__track">№ 6 Кирпичи — Инди группа feat. Пётр Сковородников</li>
-        <li className="media__track">№ 7 Поезия — Мукулатура feat. Саша Петров</li>
-        <li className="media__track">№ 8 Лодка — СБПЧ feat. Маруся Романова</li>
-        <li className="media__track">№ 9 Кирпичи — Инди группа feat. Пётр Сковородников</li>
-        <li className="media__track">№ 10 Поезия — Мукулатура feat. Саша Петров</li>
-        <li className="media__track">№ 11 Лодка — СБПЧ feat. Маруся Романова</li>
-        <li className="media__track">№ 12 Кирпичи — Инди группа feat. Пётр Сковородников</li>
-      </ul>
-      <ul className="media__content">
-        <li className="media__track media__track_type_release">Текст песни</li>
-        <li className="media__track media__track_type_text-song">Поезия Мукулатура feat. Саша Петров</li>
-        <li className="media__track media__track_type_text-song">Лодка СБПЧ feat. Маруся Романова</li>
-        <li className="media__track media__track_type_text-song">Кирпичи Инди группа feat. Пётр Сковородников</li>
-        <li className="media__track media__track_type_text-song">Поезия Мукулатура feat. Саша Петров</li>
-        <li className="media__track media__track_type_text-song">Лодка СБПЧ feat. Маруся Романова</li>
-        <li className="media__track media__track_type_text-song">Кирпичи Инди группа feat. Пётр Сковородников</li>
-        <li className="media__track media__track_type_text-song">Поезия Мукулатура feat. Саша Петров</li>
-        <li className="media__track media__track_type_text-song">Лодка СБПЧ feat. Маруся Романова</li>
-        <li className="media__track media__track_type_text-song">Кирпичи Инди группа feat. Пётр Сковородников</li>
-        <li className="media__track media__track_type_text-song">Поезия Мукулатура feat. Саша Петров</li>
-        <li className="media__track media__track_type_text-song">Лодка СБПЧ feat. Маруся Романова</li>
-        <li className="media__track media__track_type_text-song">2 Кирпичи Инди группа feat. Пётр Сковородников</li>
-      </ul>
+      <div className="media__controls">
+        <div className="media__player">
+          <p className="media__current-track">{playlist["0"].artist}. {playlist["0"].title}. {playlist["0"].lyrics}</p>
+          <Player playlist={playlist}/>
+        </div>
+        <button className="media__button-open" onClick={mediaContentVisibilityHandler}/>
+        <button className="media__button-track" onClick={contentTypeHandler}>Текст песни</button>
+      </div>
+      <div className="media__content">
+        <MediaContent playlist={playlist} isLyricOpen={isLyricOpen} />
+      </div>
     </section>
   )
 }

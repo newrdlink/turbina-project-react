@@ -52,7 +52,7 @@ const initialInputsForm = [
         label: '',
         accept: " Согласен с ",
         linkTitle: "офертой",
-        link: "https://ya.ru"
+        link: "https://ya.ru" 
     },
 
 ]

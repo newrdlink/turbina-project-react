@@ -1,12 +1,11 @@
 .media__content {
-  list-style: none;
-  max-height: 0;
-  margin: 0;
+  /*border: 1px solid red;*/
+  height: 0;
+  width: 1150px;
+  margin: 20px;
   overflow: hidden;
-  grid-column: 1/3;
-  grid-row: 4;
   transition: .3s ease-in;
-  transition-property: max-height overflow;
+  transition-property: height;
 }
 
 .media__content:hover {
@@ -31,6 +30,5 @@
 @media screen and (max-width: 500px) {
   .media__content {
     padding: 0 15px 0 20px;
-    grid-column: 1/4;
   }
 }
