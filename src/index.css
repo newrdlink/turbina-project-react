@@ -11,7 +11,7 @@
 @import url("./blocks/menu/__button/menu__button.css");
 @import url("./blocks/menu/__close-button/menu__close-button.css");
 @import url("./blocks/menu/__open-streamings/menu__open-streamings.css");
-@import url("./blocks/menu/__button/_invisible/menu__button_invisible.css");
+@import url("./blocks/menu/__resource/_invisible/menu__resource_invisible.css");
 @import url("./blocks/banner/banner.css");
 @import url("./blocks/banner/__title/banner__title.css");
 @import url("./blocks/banner/__img/banner__img.css");
