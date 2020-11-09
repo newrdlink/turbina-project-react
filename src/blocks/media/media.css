@@ -2,11 +2,16 @@
 @import url(../media/__title-track/media__title-track.css);
 @import url(../media/__player/media__player.css);
 @import url(../media/__control/media__control.css);
+@import url(../media/__controls/media__controls.css);
 @import url(../media/__button-track/media__button-track.css);
 @import url(../media/__button-track/_opened/media__button-track_opened.css);
 @import url(../media/__button-open/media__button-open.css);
 @import url(../media/__content/media__content.css);
 @import url(../media/__content/_opened/media__content_opened.css);
+@import url(../media/__content-text/media__content-text.css);
+@import url(../media/__content-text/_typo/media__content-text_typo.css);
+@import url(../media/__content-playlist/media__content-playlist.css);
+@import url(../media/__content-playlist-item/media__content-playlist-item.css);
 @import url(../media/__track/media__track.css);
 @import url(../media/__track/_type/media__track_type_release.css);
 @import url(../media/__current-track/media__current-track.css);
@@ -16,18 +21,18 @@
   top: 100%;
   left: 15px;
   transform: translateY(-100%);
-  height: 45px;
+  /*height: 45px;*/
   /*border: 1px solid red;*/
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 767px) {
   .media {
     left: 5px;
-    height: 100px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    /*height: 100px;*/
+    /*flex-wrap: wrap;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
   }
 }
