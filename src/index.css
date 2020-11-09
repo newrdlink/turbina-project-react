@@ -40,6 +40,7 @@
 @import url("./blocks/form/__input/_error/form__input_error.css");
 @import url("./blocks/form/__input/_type/form__input_type_checkbox.css");
 @import url("./blocks/form/__input/_checked/form__input_type_checked.css");
+@import url("./blocks/form/__input/_type/form__input_type_lyrics.css");
 @import url("./blocks/form/__label/form__label.css");
 @import url("./blocks/contact/__title/contact__title.css");
 @import url("./blocks/contact/__subtitle/contact__subtitle.css");

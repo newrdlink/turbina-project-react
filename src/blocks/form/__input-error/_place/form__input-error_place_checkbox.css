@@ -3,4 +3,5 @@
     top: 50%;
     transform: translateY(-75%);
     white-space: nowrap;
+    color: black;    
 }

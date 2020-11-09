@@ -41,16 +41,18 @@ const initialInputsForm = [
         type: 'text',
         autocomplete: 'off',
         label: 'Стихи',
-        maxlenght: 125,
+        maxlenght: 525,
     },
     {
         id: 5,
         name: "accept",
         placeholder: '',
         required: true,
-        type: 'checkbox',        
+        type: 'checkbox',
         label: '',
-        link: "/ru.ru"
+        accept: " Согласен с ",
+        linkTitle: "офертой",
+        link: "https://ya.ru"
     },
 
 ]
