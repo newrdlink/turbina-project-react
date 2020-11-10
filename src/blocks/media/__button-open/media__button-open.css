@@ -4,11 +4,10 @@
   background: url(../../../images/Subtract.svg) no-repeat center;
   border: 0;
   transition: opacity .2s ease-in-out;
-  order: 3;
-  /*border: 1px solid #61dafb;*/
   align-self: center;
-  margin: 0 0 0 0;
-  padding: 0 20px 0 20px;
+  margin: -20px 26px 0 0;
+  padding: 0 0 0 20px;
+  grid-area: toggle;
 }
 
 .media__button-open:focus{
@@ -22,7 +21,6 @@
 
 @media screen and (max-width: 767px) {
   .media__button-open {
-    order: 2
   }
 }
 

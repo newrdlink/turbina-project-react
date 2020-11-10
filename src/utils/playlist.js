@@ -1,4 +1,6 @@
 import iHaveDream from'./abba.mp3'
+import iHaveDreamVideo from './video-banner.svg'
+import dancingQueen from './abba-dancing-queen.mp3'
 
 const playlist = [
   {
@@ -27,15 +29,47 @@ const playlist = [
       'I\'ll cross the stream, I have a dream\n' +
       'I\'ll cross the stream, I have a dream\n' +
       'I have a dream, a song to sing\n' +
-      'To help me…'
+      'To help me…',
+    banner:iHaveDreamVideo
   },
   {
     track_id: '002',
-    title: 'I have a dream - 2',
+    title: 'Dancing Queen',
     lyrics: 'Unknown person - 2',
     artist: 'Abba',
-    src: iHaveDream,
-    lyrics_text: 'I have a dream, a song to sing'
+    src: dancingQueen,
+    lyrics_text: 'Ooh\n' +
+      'You can dance\n' +
+      'You can jive\n' +
+      'Having the time of your life\n' +
+      'Ooh, see that girl\n' +
+      'Watch that scene\n' +
+      'Digging the dancing queen\n' +
+      'Friday night and the lights are low\n' +
+      'Looking out for a place to go\n' +
+      'Where they play the right music\n' +
+      'Getting in the swing\n' +
+      'You come to look for a king\n' +
+      'Anybody could be that guy\n' +
+      'Night is young and the music\'s high\n' +
+      'With a bit of rock music\n' +
+      'Everything is fine\n' +
+      'You\'re in the mood for a dance\n' +
+      'And when you get the chance\n' +
+      'You are the dancing queen\n' +
+      'Young and sweet\n' +
+      'Only seventeen\n' +
+      'Dancing queen\n' +
+      'Feel the beat from the tambourine, oh yeah\n' +
+      'You can dance\n' +
+      'You can jive\n' +
+      'Having the time of your life\n' +
+      'Ooh, see that girl\n' +
+      'Watch that scene\n' +
+      'Digging the dancing queen\n' +
+      'You\'re a teaser, you turn \'em on\n' +
+      'Leave \'em burning and then you\'re gone\n' +
+      'Looking out for another…'
   },
   {
     track_id: '003',

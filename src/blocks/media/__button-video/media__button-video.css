@@ -1,0 +1,40 @@
+.media__button-video {
+  width: 94px;
+  height: 35px;
+  align-self: center;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  white-space: nowrap;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  border-radius: 47px;
+  display: none;
+}
+
+
+.media__button-video:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.media__button-video:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .media__button-video {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: 31px;
+    width: 74px;
+    border-radius: 15.5px;
+  }
+}
+
+.media__button-video_opened {
+  display: block;
+}

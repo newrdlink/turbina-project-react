@@ -1,11 +1,10 @@
 .media__content {
-  /*border: 1px solid red;*/
   height: 0;
-  width: 1150px;
   margin: 20px;
   overflow: hidden;
   transition: .3s ease-in;
   transition-property: height;
+  grid-area: text;
 }
 
 .media__content:hover {

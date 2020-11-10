@@ -2,7 +2,6 @@ import React from 'react'
 import Song from "./Song";
 
 function MediaContent(props) {
-  console.log(props.isLyricOpen)
   if (props.isLyricOpen) {
     return (<>
       <div className="media__content-text">
