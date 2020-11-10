@@ -15,7 +15,7 @@
   font-family: inherit;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   .form__input {
     width: 84vw;
     margin: 9px 0 0 51px;
@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   .form__input {
     width: var(--smartphone-width-s);
     min-height: 53px;
