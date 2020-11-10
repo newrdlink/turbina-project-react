@@ -10,8 +10,7 @@
 @import url("./blocks/menu/__resource/menu__resource.css");
 @import url("./blocks/menu/__button/menu__button.css");
 @import url("./blocks/menu/__close-button/menu__close-button.css");
-@import url("./blocks/menu/__open-streamings/menu__open-streamings.css");
-@import url("./blocks/menu/__resource/_invisible/menu__resource_invisible.css");
+@import url("blocks/menu/__open-streaming/menu__open-streaming.css");
 @import url("./blocks/banner/banner.css");
 @import url("./blocks/banner/__title/banner__title.css");
 @import url("./blocks/banner/__img/banner__img.css");
@@ -50,5 +49,13 @@
 @import url("./blocks/form/__input-link/form__input-link.css");
 @import url("./blocks/player/__current-time/player__current-time.css");
 @import url("./blocks/player/player.css");
-/*@import url("./blocks/player/_button-opened/player_progress-bar.css");*/
 @import url("./blocks/player/__control-button/player__control-button.css");
+@import url("./blocks/menu/__nav/menu__nav.css");
+@import url("./blocks/menu/__resources/menu__resources.css");
+@import url("./blocks/menu/__resource-link/menu__resource-link.css");
+@import url("./blocks/menu/__resource-link/_visible/menu__resource-link_visible.css");
+@import url("./blocks/menu/__resource/menu__resource.css");
+@import url("./blocks/menu/__button/menu__button.css");
+@import url("./blocks/menu/__close-button/menu__close-button.css");
+@import url("blocks/menu/__open-streaming/menu__open-streaming.css");
+@import url("./blocks/menu/__button/_invisible/menu__button_invisible.css");

@@ -1,6 +1,5 @@
-.menu__resource_invisible {
+.menu__button_invisible {
   height: 0;
-  width: 0;
   visibility: hidden;
   opacity: 0;
 }

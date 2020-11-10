@@ -2,50 +2,36 @@ import React from 'react'
 import Media from './Media.js'
 import logo from "../images/header-logo.svg";
 import mainBanner from "../images/turbina.svg";
+import Resource from "./Resource";
+import resources from "../utils/resources";
+import cn from 'classnames'
 
 function Header(props) {
 
-//функция открытия стримингов
-  const addMenu = () => {
-    document.querySelector('.menu__open-streamings').parentNode.classList.add('menu__resource_invisible');
-    document.querySelector('.menu__close-button').parentNode.classList.remove('menu__resource_invisible');
-    document.querySelectorAll('.menu__resource-link').forEach(el => el.classList.add('menu__resource-link_visible'));
+  const [isStreamingOpen, setIsStreamingOpen] = React.useState(false)
+  const handleClickStreaming = () => {
+    isStreamingOpen ? setIsStreamingOpen(false) : setIsStreamingOpen(true)
   }
-
-//функция закрытия стримингов
-  const removeMenu = () => {
-    document.querySelector('.menu__open-streamings').parentNode.classList.remove('menu__resource_invisible');
-    document.querySelector('.menu__close-button').parentNode.classList.add('menu__resource_invisible');
-    document.querySelectorAll('.menu__resource-link').forEach(el => el.classList.remove('menu__resource-link_visible'));
+  const handleClickCloseButton = () => {
+    isStreamingOpen ? setIsStreamingOpen(false) : setIsStreamingOpen(true)
   }
-
-
-
 
   return (<header className="header">
     <a href="#" target="_blank" rel="noopener" className="header__link">
       <img src={logo} alt="логотип" className="header__logo"/>
     </a>
-    <ul className="menu__resources">
-      <li className="menu__resource">
-        <button type="button" aria-label="list" className="menu__button menu__open-streamings" onClick={addMenu}>Стриминги</button>
-      </li>
-      <li className="menu__resource menu__resource_invisible">
-        <button type="button" aria-label="list" className="menu__button menu__close-button" onClick={removeMenu}/>
-      </li>
-      <li className="menu__resource">
-        <a href="#" target="_blank" rel="noopener" className="menu__resource-link">Яндекс.Музыка ↗</a>
-      </li>
-      <li className="menu__resource">
-        <a href="#" target="_blank" rel="noopener" className="menu__resource-link">Spotify ↗</a>
-      </li>
-      <li className="menu__resource">
-        <a href="#" target="_blank" rel="noopener" className="menu__resource-link">Apple Music ↗</a>
-      </li>
-      <li className="menu__resource">
-        <a href="#" target="_blank" rel="noopener" className="menu__resource-link">VK Music ↗</a>
-      </li>
-    </ul>
+    <div className="menu__nav">
+      <button type="button" aria-label="list"
+              className={cn("menu__button menu__open-streaming", {"menu__button_invisible": isStreamingOpen})}
+              onClick={handleClickStreaming}>Стриминги
+      </button>
+      <button type="button" aria-label="list"
+              className={cn("menu__button menu__close-button", {"menu__button_invisible": !isStreamingOpen})}
+              onClick={handleClickCloseButton}/>
+      <ul className="menu__resources">
+        {resources.map((resource, i) => <Resource key={i} resource={resource} isStreamingOpen={isStreamingOpen}/>)}
+      </ul>
+    </div>
     <section className="banner">
       <h1 className="banner__title"><img className="banner__img" src={mainBanner} alt="баннер"/></h1>
     </section>

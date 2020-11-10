@@ -1,8 +1,8 @@
-.menu__open-streamings {
+.menu__open-streaming {
   visibility: hidden;
 }
 @media screen and (max-width: 767px) {
-    .menu__open-streamings {
+    .menu__open-streaming {
       visibility: visible;
       opacity: 1;
       transition: visibility 0s, opacity .8s linear;
