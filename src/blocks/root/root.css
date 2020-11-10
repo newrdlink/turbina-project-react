@@ -12,8 +12,6 @@
   --smartphone-width-s: 273px;
 }
 
-
-
 @media screen and (max-width: 740px) {
   .root {
     --left-indent: 0;

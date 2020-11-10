@@ -1,10 +1,14 @@
 .media__current-track {
   position: absolute;
-  bottom: 15px;
-  left: 70px;
+  bottom: 0;
+  left: 62px;
   font-size: 22px;
   font-weight: 500;
   font-style: normal;
   line-height: 26px;
   color:#fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: calc(100% - 130px);
 }

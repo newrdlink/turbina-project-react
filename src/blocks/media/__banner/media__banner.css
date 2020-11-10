@@ -1,0 +1,18 @@
+.media__banner {
+  grid-area: banner;
+  display: none;
+}
+
+.media__banner_opened {
+  display: block;
+}
+
+
+@media screen and (max-width: 767px) {
+  .media__banner {
+    margin: 30px auto;
+    width: 240px;
+    height: 240px;
+
+  }
+}

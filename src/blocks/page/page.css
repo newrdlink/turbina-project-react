@@ -2,27 +2,34 @@
   font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100%;
-  height: 100%;
-  background-image: url("../../images/background.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment:fixed;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  margin: 0 auto;
   position: relative;
-  --left-indent: 51px;
-  --smartphone-width-l: 350px;
-  --smartphone-width-s: 273px;
 }
 
 
 
-@media screen and (max-width: 740px) {
-  .page {
-    --left-indent: 0;
-  }
+
+
+
+.page-with-blur {
 }
+
+.page-with-blur:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+}
+
+
