@@ -24,7 +24,7 @@ const Media = () => {
 
   return (
     <section className="media">
-      <Player playlist={playlist} isOpen={isMediaOpen}/>
+      <Player playlist={playlist} isOpen={isMediaOpen} currentTrack={currentTrack}/>
       <div className="media__track-video">
         <button className={cn("media__button-video", {"media__button-video_opened": isMediaOpen && isVideo})}>Клип</button>
         <button className={cn("media__button-track", {"media__button-track_opened": isMediaOpen})}

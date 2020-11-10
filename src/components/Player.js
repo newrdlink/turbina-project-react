@@ -27,7 +27,6 @@ function Player(props) {
     }
   }
 
-
   function getPauseIcon() {
     if (size.width > 767) {
       return <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +38,6 @@ function Player(props) {
         <rect width="4" height="12" rx="1" fill="white"/>
         <rect x="7" width="4" height="12" rx="1" fill="white"/>
       </svg>
-
     }
   }
 
@@ -58,7 +56,7 @@ function Player(props) {
   return (
     <div className="player">
       <div className="player__current-time">0:00</div>
-      <p className="media__current-track">{playlist["0"].artist}. {playlist["0"].title}. {playlist["0"].lyrics}</p>
+      <p className="media__current-track">{playlist[props.currentTrack].artist}. {playlist[props.currentTrack].title}. {playlist[props.currentTrack].lyrics}</p>
       <AudioPlayer
         customProgressBarSection={
           [
@@ -71,7 +69,7 @@ function Player(props) {
         customVolumeControls={[]}
         customAdditionalControls={[]}
         customLoopControls={[]}
-        src={props.playlist[0].src}
+        src={props.playlist[props.currentTrack].src}
         onListen={currentTime => currentTimeHandler(currentTime.target.currentTime)}
         customIcons={{
           play: getPlayIcon(),
@@ -83,4 +81,3 @@ function Player(props) {
 }
 
 export default Player
-
