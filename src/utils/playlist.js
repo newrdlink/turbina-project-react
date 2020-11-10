@@ -1,6 +1,6 @@
-import iHaveDream from'./abba-dream.mp3'
-import iHaveDreamVideo from './video-banner.svg'
-import dancingQueen from './abba-dancing-queen.mp3'
+import iHaveDream from './audio/abba-dream.mp3'
+import iHaveDreamVideo from './banner/video-banner.svg'
+import dancingQueen from './audio/abba-dancing-queen.mp3'
 
 const playlist = [
   {

@@ -8,26 +8,19 @@ import cn from 'classnames'
 function App() {
   const [isBlurActive, setIsBlurActive] = React.useState(false)
   React.useEffect(() => {
-    console.log('isBlurActive', isBlurActive)
   }, [isBlurActive]);
 
-
-  function isBlur(isScreenWide, isMediaOpen) {
-    console.log({isScreenWide, isMediaOpen})
-    // console.log(isMediaOpen)
-    if (!isScreenWide && isMediaOpen) {
-      setIsBlurActive(false)
-      console.log('isBlurActive', isBlurActive)
-    } else {
+  function blurHandler(isScreenWide, isMediaOpen) {
+    if (!isScreenWide && !isMediaOpen) {
       setIsBlurActive(true)
-      console.log('isBlurActive', isBlurActive)
+    } else {
+      setIsBlurActive(false)
     }
   }
 
   return (<div className="App root">
-    {/*<div className={cn("page", {"page-with-blur" : isBlurActive})}>*/}
-    <div className={"page"}>
-      <Header isBlur={isBlur}/>
+    <div className={cn("page", {"page-with-blur" : isBlurActive})}>
+      <Header blurHandler={blurHandler}/>
       <Main/>
       <Footer/>
     </div>
