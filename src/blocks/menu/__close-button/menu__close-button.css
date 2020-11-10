@@ -2,6 +2,6 @@
   .menu__close-button {
     background: url('../../../images/close-button.svg') no-repeat center;
     padding: 10px;
-    /* margin-bottom: 6px; */
+    margin-bottom: 6px;
   }
 }
