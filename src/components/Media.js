@@ -14,8 +14,7 @@ const Media = (props) => {
   const mediaContentVisibilityHandler = () => {
     isMediaOpen ? setIsMediaOpen(false) : setIsMediaOpen(true)
     detectVideo(currentTrack)
-    // console.log('media is changed', {isScreenWide, isMediaOpen})
-    props.isBlur(isScreenWide, isMediaOpen)
+    props.blurHandler(isScreenWide, isMediaOpen)
   }
 
   const [isVideo, setIsVideo] = React.useState(false)
@@ -35,8 +34,7 @@ const Media = (props) => {
   const [isScreenWide, setIsScreenWide] = React.useState(true)
   React.useEffect(() => {
     (size.width > 767) ? setIsScreenWide(true) : setIsScreenWide(false);
-    props.isBlur(isScreenWide, !isMediaOpen)
-    // console.log('size is changed', {isScreenWide, isMediaOpen})
+    props.blurHandler(isScreenWide, !isMediaOpen)
   }, [size]);
 
   return (<section className="media">

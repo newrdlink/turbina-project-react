@@ -35,7 +35,7 @@ function Header(props) {
     <section className="banner">
       <h1 className="banner__title"><img className="banner__img" src={mainBanner} alt="баннер"/></h1>
     </section>
-    <Media isBlur={props.isBlur}/>
+    <Media blurHandler={props.blurHandler}/>
   </header>)
 }
 
