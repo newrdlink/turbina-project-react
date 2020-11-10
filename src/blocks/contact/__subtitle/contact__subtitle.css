@@ -1,6 +1,17 @@
 .contact__subtitle {
     font-weight: normal;
     font-style: normal;
+    padding-right: 10px;
     font-size: 16px;
     line-height: 22px;
+    margin: 0;
+    margin-bottom: 70px;
+}
+
+
+@media screen and (max-width: 400px) {
+  .contact__subtitle {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
