@@ -1,15 +1,12 @@
 import AudioPlayer, {RHAP_UI} from 'react-h5-audio-player'
 import React from "react";
-import useWindowSize from './WindowSize'
 import playlist from "../utils/playlist";
 
 
 function Player(props) {
 
-  const size = useWindowSize()
-
   function getPlayIcon() {
-    if (size.width > 767) {
+    if (props.isScreenWide) {
       return <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M14.3041 7.76283C15.232 8.34867 15.232 9.65133 14.3041 10.2372L2.40195 17.7525C1.37215 18.4027 -7.73515e-07
@@ -28,7 +25,7 @@ function Player(props) {
   }
 
   function getPauseIcon() {
-    if (size.width > 767) {
+    if (props.isScreenWide) {
       return <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="4" height="14" rx="1" fill="white"/>
         <rect x="8" width="4" height="14" rx="1" fill="white"/>

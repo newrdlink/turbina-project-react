@@ -3,8 +3,9 @@ import Player from './Player.js'
 import MediaContent from './MediaContent.js'
 import playlist from '../utils/playlist.js'
 import cn from 'classnames'
+import useWindowSize from "./WindowSize.js";
 
-const Media = () => {
+const Media = (props) => {
 
   const [isLyricOpen, setIsLyricOpen] = React.useState(true)
   const contentTypeHandler = () => isLyricOpen ? setIsLyricOpen(false) : setIsLyricOpen(true)
@@ -13,6 +14,8 @@ const Media = () => {
   const mediaContentVisibilityHandler = () => {
     isMediaOpen ? setIsMediaOpen(false) : setIsMediaOpen(true)
     detectVideo(currentTrack)
+    // console.log('media is changed', {isScreenWide, isMediaOpen})
+    props.isBlur(isScreenWide, isMediaOpen)
   }
 
   const [isVideo, setIsVideo] = React.useState(false)
@@ -28,13 +31,16 @@ const Media = () => {
     detectVideo(currentTrack)
   }, [currentTrack]);
 
-  // const [isScreenWide, setIsScreenWide] = React.useState(true)
-
-
-
+  const size = useWindowSize()
+  const [isScreenWide, setIsScreenWide] = React.useState(true)
+  React.useEffect(() => {
+    (size.width > 767) ? setIsScreenWide(true) : setIsScreenWide(false);
+    props.isBlur(isScreenWide, !isMediaOpen)
+    // console.log('size is changed', {isScreenWide, isMediaOpen})
+  }, [size]);
 
   return (<section className="media">
-      <Player playlist={playlist} isOpen={isMediaOpen} currentTrack={currentTrack}/>
+      <Player playlist={playlist} isOpen={isMediaOpen} currentTrack={currentTrack} isScreenWide={isScreenWide}/>
       <div className="media__track-video">
         <button className={cn("media__button-video", {"media__button-video_opened": isMediaOpen && isVideo})}>Клип</button>
         <button className={cn("media__button-track", {"media__button-track_opened": isMediaOpen})}

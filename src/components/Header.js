@@ -3,7 +3,7 @@ import Media from './Media.js'
 import logo from "../images/header-logo.svg";
 import mainBanner from "../images/turbina.svg";
 
-function Header() {
+function Header(props) {
 
 //функция открытия стримингов
   const addMenu = () => {
@@ -18,6 +18,9 @@ function Header() {
     document.querySelector('.menu__close-button').parentNode.classList.add('menu__resource_invisible');
     document.querySelectorAll('.menu__resource-link').forEach(el => el.classList.remove('menu__resource-link_visible'));
   }
+
+
+
 
   return (<header className="header">
     <a href="#" target="_blank" rel="noopener" className="header__link">
@@ -46,7 +49,7 @@ function Header() {
     <section className="banner">
       <h1 className="banner__title"><img className="banner__img" src={mainBanner} alt="баннер"/></h1>
     </section>
-    <Media/>
+    <Media isBlur={props.isBlur}/>
   </header>)
 }
 
