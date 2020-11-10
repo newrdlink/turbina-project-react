@@ -1,14 +1,16 @@
-export default class Api{
-  constructor(url) {
-    this._baseUrl = url;
+import React from 'react'
+
+class Api extends React.Component {
+  constructor({ address, headers }) {
+    super();
+    this.address = address;
+    this.headers = headers;
   }
 
-  formSubmitHandler({ name, phone, email, lyrics }) {
+  addNewDate({ name, phone, email, lyrics }) {
     return fetch(this._baseUrl, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
+      headers: this.headers,
       body: JSON.stringify({
         name,
         phone,
@@ -20,9 +22,17 @@ export default class Api{
         if (res.ok) {
           return res.json();
         }
-
-        return Promise.reject(`Ошибка: ${res.status}`);
+        return Promise.reject(`Ошибка типа серверу что-то не нравится: ${res.status}`);
       });
   }
-
 }
+
+const api = new Api({
+  address: "https://mesto.nomoreparties.co/v1",
+  headers: {
+    authorization: "27ead031-f9f7-43be-99b7-3241b8a48ff4",
+    "Content-Type": "application/json",
+  },
+});
+
+export default api;

@@ -1,7 +1,13 @@
 import Form from "./Form";
 import initialInputsForm from '../utils/inputs'
+import api from "./Api"
 
 function Main() {
+
+  const handleSubmit = (data) => {
+    api.addNewDate(data);
+  }
+
   return (<main className="main">
     <article className="article">
       <h2 className="article__title">О ПРОЕКТЕ.</h2>
@@ -53,7 +59,7 @@ function Main() {
       inputs={initialInputsForm}
       title="ФОРМА."
       subtittle="Заполняя эту форму, вы становитесь частью проекта."
-      onSubmitHandler={(formData) => { console.log('from app ', formData) }} />
+      onSubmitHandler={(formData) => { handleSubmit(formData) }} />
   </main>)
 }
 
