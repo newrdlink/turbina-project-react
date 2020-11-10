@@ -1,7 +1,11 @@
 import React from 'react'
 
 function Song(props) {
-  return (<li className="media__content-playlist-item">{props.title}. {props.artist}</li>)
+  function handleClickTrack() {
+    props.onTrackClick(props)
+  }
+
+  return (<li className="media__content-playlist-item" onClick={handleClickTrack.bind(props)}>{props.title}. {props.artist}</li>)
 }
 
 export default Song

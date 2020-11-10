@@ -7,4 +7,8 @@
   font-style: normal;
   line-height: 26px;
   color:#fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: calc(100% - 130px);
 }

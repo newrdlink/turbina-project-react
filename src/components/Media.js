@@ -5,7 +5,6 @@ import playlist from '../utils/playlist.js'
 import cn from 'classnames'
 
 const Media = () => {
-  let currentTrack = 1
 
   const [isLyricOpen, setIsLyricOpen] = React.useState(true)
   const contentTypeHandler = () => isLyricOpen ? setIsLyricOpen(false) : setIsLyricOpen(true)
@@ -17,13 +16,24 @@ const Media = () => {
   }
 
   const [isVideo, setIsVideo] = React.useState(false)
-
   function detectVideo(currentTrack) {
     playlist[currentTrack].banner ? setIsVideo(true) : setIsVideo(false)
   }
 
-  return (
-    <section className="media">
+  const [currentTrack, setCurrentTrack] = React.useState(0)
+  function handleTrackClick(track) {
+    setCurrentTrack(track.track_id)
+  }
+  React.useEffect(() => {
+    detectVideo(currentTrack)
+  }, [currentTrack]);
+
+  // const [isScreenWide, setIsScreenWide] = React.useState(true)
+
+
+
+
+  return (<section className="media">
       <Player playlist={playlist} isOpen={isMediaOpen} currentTrack={currentTrack}/>
       <div className="media__track-video">
         <button className={cn("media__button-video", {"media__button-video_opened": isMediaOpen && isVideo})}>Клип</button>
@@ -33,13 +43,12 @@ const Media = () => {
       <button className={cn("media__button-open", {"media__button-open_active": isMediaOpen})}
               onClick={mediaContentVisibilityHandler}/>
       <div className={cn("media__content", {"media__content_opened": isMediaOpen})}>
-        <MediaContent playlist={playlist} isLyricOpen={isLyricOpen}/>
+        <MediaContent playlist={playlist} isLyricOpen={isLyricOpen} onTrackClick={handleTrackClick} currentTrack={currentTrack}/>
       </div>
       <img src={playlist[currentTrack].banner}
            className={cn("media__banner", {"media__banner_opened": isMediaOpen && isVideo})}
            alt={playlist[currentTrack].title}/>
-    </section>
-  )
+    </section>)
 }
 
 export default Media;

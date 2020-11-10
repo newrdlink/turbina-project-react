@@ -4,10 +4,11 @@ import Main from './Main.js'
 import Footer from './Footer.js'
 
 function App() {
+
   return (<div className="App root">
       <div className="page">
         <Header/>
-        <Main/>
+        <Main />
         <Footer/>
       </div>
     </div>);
