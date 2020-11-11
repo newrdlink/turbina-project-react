@@ -2,20 +2,6 @@ import React from 'react'
 // import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import cn from 'classnames'
-import InputMask from 'react-input-mask';
-
-const PhoneInput = ({ value, onChange, ...rest }) => (
-  <InputMask
-    {...{
-      mask: "9 999 999 99 99",
-      value,
-      onChange,
-      ...rest,
-    }}
-  >
-    {(inputProps) => <input {...inputProps} type="tel" />}
-  </InputMask>
-);
 
 const Form = ({ onSubmitHandler, inputs = [], title, subtittle }) => {
 
@@ -53,35 +39,6 @@ const Form = ({ onSubmitHandler, inputs = [], title, subtittle }) => {
       <p className="contact__subtitle">{subtittle}</p>
       <form className="form" noValidate onSubmit={onSubmit}>
         {inputs.map(({ type, name, required, id, minlength, maxlenght, placeholder, autocomplete, pattern, linkTitle, link, accept }) => {
-          if (name === 'phone') {
-              return (
-                <label key={id} className={cn("form__label", { "applicant__container_required": !formInputRequire[name] })}>
-                  <PhoneInput
-                    required={required}
-                    name={name}
-                    placeholder={placeholder}
-                    autoComplete={autocomplete}
-                    className={cn("form__input", { "form__input_error": formErrors[name] &&!formInputRequire[name] })}
-                    value={formData[name] || ''}
-                    onChange={evt => {
-                      setFormData({ ...formData, [name]: evt.target.value })
-                      const errorMessage = evt.target.validationMessage
-                      setFormErrors({ ...formErrors, [name]: errorMessage || '' })
-                      const isInputRequired = evt.target.validity.valid
-                      setFormInputsRequire({ ...formInputRequire, [name]: isInputRequired })
-                      isCheckedCheckbox(evt)
-                    }}
-                  />
-                  <span
-                    className={cn("form__input-error",
-                      { "form__input-error_place_checkbox": name === 'accept' }
-                    )}>
-                    {type !== "checkbox" ? formErrors[name] : null}
-                    {accept}
-                  </span>
-                </label>
-              )
-          }
           if (name !== "lyrics") {
             return <label key={id} className={cn("form__label", { "applicant__container_required": !formInputRequire[name] })}>
               <input
