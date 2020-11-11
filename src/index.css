@@ -50,7 +50,7 @@
 @import url("./blocks/player/__current-time/player__current-time.css");
 @import url("./blocks/player/player.css");
 @import url("./blocks/player/__control-button/player__control-button.css");
-@import url("./blocks/menu/__nav/menu__nav.css");
+@import url("./blocks/menu/menu.css");
 @import url("./blocks/menu/__resources/menu__resources.css");
 @import url("./blocks/menu/__resource-link/menu__resource-link.css");
 @import url("./blocks/menu/__resource-link/_visible/menu__resource-link_visible.css");

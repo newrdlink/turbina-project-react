@@ -20,7 +20,7 @@ function Header(props) {
     <a href="#" target="_blank" rel="noopener" className="header__link">
       <img src={logo} alt="логотип" className="header__logo"/>
     </a>
-    <div className="menu__nav">
+    <div className="menu">
       <button type="button" aria-label="list"
               className={cn("menu__button menu__open-streaming", {"menu__button_invisible": isStreamingOpen})}
               onClick={handleClickStreaming}>Стриминги
