@@ -4,7 +4,7 @@
   opacity: 1;
    /*transition: opacity .4s ease-in-out; */
   transition-property: max-height, opacity;
-  max-height: 30px;
+  /* max-height: 30px; */
 }
 
 @media screen and (max-width: 767px) {

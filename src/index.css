@@ -48,7 +48,9 @@
 @import url("./blocks/form/__input-text/form__input-text.css");
 @import url("./blocks/form/__input-link/form__input-link.css");
 @import url("./blocks/player/__current-time/player__current-time.css");
+@import url("./blocks/player/__current-time/_direction/player__current-time_direction_up.css");
 @import url("./blocks/player/player.css");
+@import url("./blocks/player/_direction/player_direction_up.css");
 @import url("./blocks/player/__control-button/player__control-button.css");
 @import url("./blocks/menu/menu.css");
 @import url("./blocks/menu/__resources/menu__resources.css");

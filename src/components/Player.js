@@ -1,6 +1,7 @@
 import AudioPlayer, {RHAP_UI} from 'react-h5-audio-player'
 import React from "react";
 import playlist from "../utils/playlist";
+import cn from 'classnames';
 
 
 function Player(props) {
@@ -51,9 +52,9 @@ function Player(props) {
   }
 
   return (
-    <div className="player">
-      <div className="player__current-time">0:00</div>
-      <p className="media__current-track">{playlist[props.currentTrack].artist}. {playlist[props.currentTrack].title}. {playlist[props.currentTrack].lyrics}</p>
+    <div className={cn("player", {'player_direction_up' : props.isOpen})}>
+      <div className={cn("player__current-time", {"player__current-time_direction_up" : props.isOpen})}>0:00</div>
+      <p className={cn("media__current-track", {"media__current-track_direction_up" : props.isOpen})}>{playlist[props.currentTrack].artist}. {playlist[props.currentTrack].title}. {playlist[props.currentTrack].lyrics}</p>
       <AudioPlayer
         customProgressBarSection={
           [

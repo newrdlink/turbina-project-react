@@ -18,12 +18,13 @@
 @import url(../media/__track/media__track.css);
 @import url(../media/__track/_type/media__track_type_release.css);
 @import url(../media/__current-track/media__current-track.css);
+@import url(../media/__current-track/_direction/media__current-track_direction_up.css);
 
 
 .media {
   /*border: 1px solid red;*/
   position: absolute;
-  top: 100%;
+  top: 102%;
   left: 0;
   transform: translateY(-100%);
   display: grid;
@@ -32,6 +33,15 @@
   grid-template-areas: "banner player track-video toggle"
                         "banner text text text"
 
+}
+
+@media screen and (max-width: 1023px) {
+  .media {
+    left: 5px;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "player player track-video toggle"
+                        "banner text text text"
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -48,6 +58,9 @@
 .media__track-video {
   grid-area: track-video;
   display: flex;
+  position: relative;
+  left: 0;
+  top: -36px;
 }
 
 @media screen and (max-width: 767px) {

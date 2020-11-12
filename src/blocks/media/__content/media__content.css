@@ -5,6 +5,9 @@
   transition: .3s ease-in;
   transition-property: height;
   grid-area: text;
+  position: relative;
+  top: -41px;
+  left: 15px;
 }
 
 .media__content:hover {
@@ -29,5 +32,11 @@
 @media screen and (max-width: 500px) {
   .media__content {
     padding: 0 15px 0 20px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .media__content {
+    left: 50px;
   }
 }

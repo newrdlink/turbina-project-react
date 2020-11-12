@@ -1,0 +1,9 @@
+.media__current-track_direction_up {
+  bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .media__current-track_direction_up  {
+    bottom: -10px;
+  }
+}
