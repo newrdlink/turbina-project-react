@@ -19,11 +19,6 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
-  .media__button-open {
-  }
-}
-
 @media screen and (max-width: 500px) {
   .media__button-open {
     height: 16px;

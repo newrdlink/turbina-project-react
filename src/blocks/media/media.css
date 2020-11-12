@@ -31,7 +31,7 @@
   grid-template-columns: auto 1fr auto auto;
   width: 100%;
   grid-template-areas: "banner player track-video toggle"
-                        "banner text text text"
+                        "banner text text pusto"
 
 }
 
@@ -40,7 +40,7 @@
     left: 5px;
     grid-template-columns: auto 1fr auto auto;
     grid-template-areas: "player player track-video toggle"
-                        "banner text text text"
+                        "banner text text pusto"
   }
 }
 
@@ -51,7 +51,7 @@
     grid-template-areas: "player toggle "
                           "banner banner"
                           "track-video track-video"
-                          "text text"
+                          "text pusto"
   }
 }
 
