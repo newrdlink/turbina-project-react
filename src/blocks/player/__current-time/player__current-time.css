@@ -8,3 +8,15 @@
   line-height: 26px;
   color:#fff;
 }
+
+@media screen and (max-width: 1279px) {
+  .player__current-time {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .player__current-time {
+    font-size: 14px;
+  }
+}
