@@ -3,7 +3,7 @@ import Player from './Player.js'
 import MediaContent from './MediaContent.js'
 import playlist from '../utils/playlist.js'
 import cn from 'classnames'
-import useWindowSize from "./WindowSize.js";
+import useWindowSize from "../utils/WindowSize.js";
 
 const Media = (props) => {
 
@@ -35,24 +35,30 @@ const Media = (props) => {
   React.useEffect(() => {
     (size.width > 767) ? setIsScreenWide(true) : setIsScreenWide(false);
     props.blurHandler(isScreenWide, !isMediaOpen)
-  }, [size]);
+  }, [isScreenWide, isMediaOpen, props, size.width]);
 
-  return (<section className="media">
-      <Player playlist={playlist} isOpen={isMediaOpen} currentTrack={currentTrack} isScreenWide={isScreenWide}/>
+  return (
+    <section className="media">
+      <Player playlist={playlist} isOpen={isMediaOpen} currentTrack={currentTrack} isScreenWide={isScreenWide} />
       <div className="media__track-video">
-        <button className={cn("media__button-video", {"media__button-video_opened": isMediaOpen && isVideo})}>Клип</button>
-        <button className={cn("media__button-track", {"media__button-track_opened": isMediaOpen})}
-                onClick={contentTypeHandler}>{isLyricOpen ? "Текст песни" : "Релизы"}</button>
+        <button className={cn("media__button-video",
+          { "media__button-video_opened": isMediaOpen && isVideo })}>Клип</button>
+        <button className={cn("media__button-track",
+          { "media__button-track_opened": isMediaOpen })}
+          onClick={contentTypeHandler}>{isLyricOpen ? "Текст песни" : "Релизы"}</button>
       </div>
-      <button className={cn("media__button-open", {"media__button-open_active": isMediaOpen})}
-              onClick={mediaContentVisibilityHandler}/>
-      <div className={cn("media__content", {"media__content_opened": isMediaOpen})}>
-        <MediaContent playlist={playlist} isLyricOpen={isLyricOpen} onTrackClick={handleTrackClick} currentTrack={currentTrack}/>
+      <button className={cn("media__button-open",
+        { "media__button-open_active": isMediaOpen })}
+        onClick={mediaContentVisibilityHandler} />
+      <div className={cn("media__content",
+        { "media__content_opened": isMediaOpen })}>
+        <MediaContent playlist={playlist} isLyricOpen={isLyricOpen} onTrackClick={handleTrackClick} currentTrack={currentTrack} />
       </div>
       <img src={playlist[currentTrack].banner}
-           className={cn("media__banner", {"media__banner_opened": isMediaOpen && isVideo})}
-           alt={playlist[currentTrack].title}/>
-    </section>)
+        className={cn("media__banner", { "media__banner_opened": isMediaOpen && isVideo })}
+        alt={playlist[currentTrack].title} />
+    </section>
+  )
 }
 
 export default Media;
