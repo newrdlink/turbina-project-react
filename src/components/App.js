@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './Header.js'
 import Main from './Main.js'
 import Footer from './Footer.js'
 import cn from 'classnames'
 
-
 function App() {
+
   const [isBlurActive, setIsBlurActive] = React.useState(false)
-  React.useEffect(() => {
+
+  useEffect(() => {
   }, [isBlurActive]);
 
   function blurHandler(isScreenWide, isMediaOpen) {
@@ -18,13 +19,15 @@ function App() {
     }
   }
 
-  return (<div className="App root">
-    <div className={cn("page", {"page-with-blur" : isBlurActive})}>
-      <Header blurHandler={blurHandler}/>
-      <Main/>
-      <Footer/>
+  return (
+    <div className="root">
+      <div className={cn("page", { "page-with-blur": isBlurActive })}>
+        <Header blurHandler={blurHandler} />
+        <Main />
+        <Footer />
+      </div>
     </div>
-  </div>);
+  );
 }
 
 export default App;
