@@ -5,7 +5,7 @@
   border: 0;
   transition: opacity .2s ease-in-out;
   align-self: center;
-  margin: -20px 26px 0 0;
+  margin: -27px 23px 0 23px;
   padding: 0 0 0 20px;
   grid-area: toggle;
 }
@@ -17,11 +17,6 @@
 .media__button-open:hover {
   opacity: 0.6;
   cursor: pointer;
-}
-
-@media screen and (max-width: 767px) {
-  .media__button-open {
-  }
 }
 
 @media screen and (max-width: 500px) {
