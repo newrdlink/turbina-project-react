@@ -2,7 +2,7 @@
   "name": "turbina-project-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://newrdlink.github.io/turbina-project-react",
+  "homepage": "https://newrdlink.github.io/turbina-project-react/build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
