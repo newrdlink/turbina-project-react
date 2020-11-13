@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2c0d0ea4.chunk.css",
+    "main.js": "/static/js/main.2061dc81.chunk.js",
+    "main.js.map": "/static/js/main.2061dc81.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.baa5a2ec.js",
+    "runtime-main.js.map": "/static/js/runtime-main.baa5a2ec.js.map",
+    "static/css/2.ac17e91d.chunk.css": "/static/css/2.ac17e91d.chunk.css",
+    "static/js/2.5c2bcb34.chunk.js": "/static/js/2.5c2bcb34.chunk.js",
+    "static/js/2.5c2bcb34.chunk.js.map": "/static/js/2.5c2bcb34.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.ac17e91d.chunk.css.map": "/static/css/2.ac17e91d.chunk.css.map",
+    "static/css/main.2c0d0ea4.chunk.css.map": "/static/css/main.2c0d0ea4.chunk.css.map",
+    "static/js/2.5c2bcb34.chunk.js.LICENSE.txt": "/static/js/2.5c2bcb34.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/close-button.6c1eac8e.svg",
+    "static/media/abba-dancing-queen.538c21a4.mp3": "/static/media/abba-dancing-queen.538c21a4.mp3",
+    "static/media/abba-dream.bcc8db87.mp3": "/static/media/abba-dream.bcc8db87.mp3",
+    "static/media/header-logo.9422abe3.svg": "/static/media/header-logo.9422abe3.svg",
+    "static/media/turbina.9a288190.svg": "/static/media/turbina.9a288190.svg",
+    "static/media/video-banner.039b851e.svg": "/static/media/video-banner.039b851e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.baa5a2ec.js",
+    "static/css/2.ac17e91d.chunk.css",
+    "static/js/2.5c2bcb34.chunk.js",
+    "static/css/main.2c0d0ea4.chunk.css",
+    "static/js/main.2061dc81.chunk.js"
+  ]
+}
