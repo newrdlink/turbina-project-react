@@ -1,11 +1,20 @@
+import React, { useState } from 'react'
 import Form from "./Form";
 import initialInputsForm from '../utils/inputs'
 import api from "./Api"
 
 function Main() {
 
+  const [isRequestOk, setIsRequestOk] = useState(true)
+
   const handleSubmit = (data) => {
-    api.addNewDate(data);
+    api.addNewDate(data)
+      .catch(res => {
+        if (res.status === 200) {
+          return
+        }
+        setIsRequestOk(false)
+      })
   }
 
   return (<main className="main">
@@ -59,7 +68,8 @@ function Main() {
       inputs={initialInputsForm}
       title="ФОРМА."
       subtittle="Заполняя эту форму, вы становитесь частью проекта."
-      onSubmitHandler={(formData) => { handleSubmit(formData) }} />
+      onSubmitHandler={(formData) => { handleSubmit(formData) }}
+      respons={isRequestOk} />
   </main>)
 }
 
