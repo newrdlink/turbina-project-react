@@ -5,20 +5,4 @@
   position: relative;
   margin: 0;
 }
-
-@media screen and (max-width: 740px) {
-  .form {
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .form {
-    width: var(--smartphone-width-l);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .form {
-    width: var(--smartphone-width-s);
-  }
-}
+ 

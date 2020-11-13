@@ -8,7 +8,7 @@ class Api extends React.Component {
   }
 
   addNewDate({ name, phone, email, lyrics }) {
-    return fetch(this._baseUrl, {
+    return fetch(`${this._baseUrl}/lyrics`, {
       method: 'POST',
       headers: this.headers,
       body: JSON.stringify({
@@ -22,8 +22,8 @@ class Api extends React.Component {
         if (res.ok) {
           return res.json();
         }
-        return Promise.reject(`Ошибка типа серверу что-то не нравится: ${res.status}`);
-      });
+        return Promise.reject(res);
+      })
   }
 }
 

@@ -1,9 +1,8 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import cn from 'classnames'
 
-const Form = ({ onSubmitHandler, inputs = [], title, subtittle }) => {
+const Form = ({ onSubmitHandler, inputs = [], title, subtittle, respons }) => {
 
   let initialOjectRequired = inputs.reduce((obj, item) => {
     obj[item.name] = !item.required
@@ -106,7 +105,12 @@ const Form = ({ onSubmitHandler, inputs = [], title, subtittle }) => {
             </span>
           </label>
         })}
-        <button type="submit" disabled={isValidForm()} className="form__submit-button">Отправить форму</button>
+        <button type="submit" disabled={isValidForm()}
+          className={cn("form__submit-button",
+            { "form__submit-button_disabled": isValidForm() })}>Отправить форму</button>
+        <span className="form__submit-error">
+          {respons ? "" : "Упс, что-то пошло не так и форма не отправилась, попробуйте ещё раз!"}
+        </span>
       </form>
     </section>
   )
