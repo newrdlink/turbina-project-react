@@ -7,7 +7,7 @@ class Api extends React.Component {
     this.headers = headers;
   }
 
-  addNewDate({ name, phone, email, lyrics }) {
+  addNewData({ name, phone, email, lyrics }) {
     return fetch(`${this._baseUrl}/lyrics`, {
       method: 'POST',
       headers: this.headers,

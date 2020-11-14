@@ -26,16 +26,12 @@ const Form = ({ onSubmitHandler, inputs = [], title, subtittle, respons }) => {
     (evt.target.type === "checkbox" && evt.target.validity.valid) ? setChecked(true) : setChecked(false)
   }
 
-  const isValidForm = () => {
-    if (
-      Object.keys(formInputRequire).some(error => formInputRequire[error] === false)
-    ) { return true }
-  }
+  const isValidForm = () => Object.keys(formInputRequire).some(error => formInputRequire[error] === false)
 
   return (
     <section className="contact">
-      <h3 className="contact__title">{title}</h3>
-      <p className="contact__subtitle">{subtittle}</p>
+      {title}
+      {subtittle}
       <form className="form" noValidate onSubmit={onSubmit}>
         {inputs.map(({ type, name, required, id, minlength, maxlenght, placeholder, autocomplete, pattern, linkTitle, link, accept }) => {
           if (name !== "lyrics") {
@@ -69,7 +65,7 @@ const Form = ({ onSubmitHandler, inputs = [], title, subtittle, respons }) => {
                 )}>
                 {type !== "checkbox" ? formErrors[name] : null}
                 {accept}
-                {name === 'accept' ? <a href={link}>{linkTitle}</a> : ''}
+                {name === 'accept' ? <a className="form__input-link" href={link}>{linkTitle}</a> : ''}
               </span>
 
             </label>
