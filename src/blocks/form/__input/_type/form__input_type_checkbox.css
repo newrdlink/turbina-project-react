@@ -1,5 +1,5 @@
 .form__input_type_checkbox[type=checkbox] {
-    -moz-appearance:initial;
+    appearance:initial;
     position: relative;
     width: 0;
     height: 0;

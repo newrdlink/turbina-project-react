@@ -8,12 +8,15 @@ function Main() {
   const [isRequestOk, setIsRequestOk] = useState(true)
 
   const handleSubmit = (data) => {
-    api.addNewDate(data)
-      .catch(res => {
+    api.addNewData(data)
+      .then(res => {
         if (res.status === 200) {
           return
         }
+      })
+      .catch((error) => {
         setIsRequestOk(false)
+        console.log({ message: `Sorry, error ... ${error.statusText}` })
       })
   }
 
@@ -67,8 +70,8 @@ function Main() {
       </article>
       <Form
         inputs={initialInputsForm}
-        title="ФОРМА."
-        subtittle="Заполняя эту форму, вы становитесь частью проекта."
+        title={<h3 className="contact__title">ФОРМА.</h3>}
+        subtittle={<p className="contact__subtitle">Заполняя эту форму, вы становитесь частью проекта.</p>}
         onSubmitHandler={(formData) => { handleSubmit(formData) }}
         respons={isRequestOk} />
     </main>

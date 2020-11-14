@@ -41,13 +41,9 @@
 @import url("./blocks/form/__label/form__label.css");
 @import url("./blocks/contact/__title/contact__title.css");
 @import url("./blocks/contact/__subtitle/contact__subtitle.css");
-@import url("./blocks/form/__input/_position/form__input_position_lyrics.css");
-@import url("./blocks/form/__input/_position/form__input_position_mail.css");
-@import url("./blocks/form/__input/_position/form__input_position_tel.css");
 @import url("./blocks/form/__submit-button/form__submit-button.css");
 @import url("./blocks/form/__submit-button/_disabled/form__submit-button_disabled.css");
 @import url("./blocks/form/__submit-error/form__submit-error.css");
-@import url("./blocks/form/__input-text/form__input-text.css");
 @import url("./blocks/form/__input-link/form__input-link.css");
 @import url("./blocks/player/__current-time/player__current-time.css");
 @import url("./blocks/player/__current-time/_direction/player__current-time_direction_up.css");
