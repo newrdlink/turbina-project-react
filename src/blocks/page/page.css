@@ -1,7 +1,5 @@
 .page {
   font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   max-width: 1280px;
   display: flex;
   flex-direction: column;
@@ -9,9 +7,6 @@
   justify-content: center;
   margin: 0 auto;
   position: relative;
-}
-
-.page-with-blur {
 }
 
 .page-with-blur:before {

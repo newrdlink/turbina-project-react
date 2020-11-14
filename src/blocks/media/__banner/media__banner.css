@@ -16,10 +16,6 @@
   animation: banner .5s ease-in;
 }
 
-.media__banner_opened {
-  display: block;
-}
-
 @media screen and (max-width: 1023px) {
   .media__banner {
     top: 0;

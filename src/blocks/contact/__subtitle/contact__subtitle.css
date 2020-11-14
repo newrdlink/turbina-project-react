@@ -1,11 +1,12 @@
 .contact__subtitle {
-    font-weight: normal;
-    font-style: normal;
-    padding-right: 10px;
-    font-size: 16px;
-    line-height: 22px;
-    margin: 0;
-    margin-bottom: 60px;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  padding-right: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 60px;
 }
 
 

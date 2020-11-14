@@ -1,16 +1,7 @@
 .media__controls {
   display: flex;
   flex-direction: row;
-  /*border: 1px solid red;*/
   width: 100%;
   margin: 0 0 -21px 0;
-  padding: 0 0 0 0;
+  padding: 0;
 }
-
-/*@media screen and (max-width: 767px) {*/
-/*  .media__controls {*/
-/*    flex-wrap: wrap;*/
-/*    align-items: center;*/
-/*    justify-content: space-between;*/
-/*  }*/
-/*}*/
