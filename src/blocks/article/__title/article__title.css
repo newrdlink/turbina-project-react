@@ -1,5 +1,6 @@
 .article__title {
   margin: 95px 0 0 var(--left-indent);
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 50px;

@@ -6,7 +6,9 @@
 @import url(../media/__button-track/media__button-track.css);
 @import url(../media/__button-track/_opened/media__button-track_opened.css);
 @import url(../media/__button-video/media__button-video.css);
+@import url(../media/__button-video/_opened/media__button-video_opened.css);
 @import url(../media/__banner/media__banner.css);
+@import url(../media/__banner/_opened/media__banner_opened.css);
 
 @import url(../media/__button-open/media__button-open.css);
 @import url(../media/__content/media__content.css);
@@ -22,7 +24,6 @@
 
 
 .media {
-  /*border: 1px solid red;*/
   position: absolute;
   top: 102%;
   left: 0;

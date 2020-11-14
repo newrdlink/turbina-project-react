@@ -2,11 +2,10 @@
   display: flex;
   position: relative;
   justify-content: space-between;
-  /* width: calc(100vw - 35px); */
   width: 100%;
   max-width: 1280px;
   padding: 15px 15px 0 20px;
-  height: 99vh;
+  height: calc(100vh - 10px);
   box-sizing: border-box;
 }
 

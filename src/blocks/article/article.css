@@ -1,22 +1,22 @@
 .article {
-  width: 760px;
+  max-width: 760px;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1279px) {
   .article {
-    width: 740px;
+    max-width: 680px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .article {
-    width: 91vw;
+    max-width: 648px;
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 767px) {
   .article {
-    width: 87vw;
+    max-width: 270px;
     margin: 0 auto;
   }
 }
