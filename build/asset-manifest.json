@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/turbina-project-react/build/static/css/main.59dfcd1f.chunk.css",
-    "main.js": "/turbina-project-react/build/static/js/main.2061dc81.chunk.js",
-    "main.js.map": "/turbina-project-react/build/static/js/main.2061dc81.chunk.js.map",
+    "main.css": "/turbina-project-react/build/static/css/main.188a3a4d.chunk.css",
+    "main.js": "/turbina-project-react/build/static/js/main.6516fa7a.chunk.js",
+    "main.js.map": "/turbina-project-react/build/static/js/main.6516fa7a.chunk.js.map",
     "runtime-main.js": "/turbina-project-react/build/static/js/runtime-main.b9087e6c.js",
     "runtime-main.js.map": "/turbina-project-react/build/static/js/runtime-main.b9087e6c.js.map",
     "static/css/2.ac17e91d.chunk.css": "/turbina-project-react/build/static/css/2.ac17e91d.chunk.css",
-    "static/js/2.e6df11c1.chunk.js": "/turbina-project-react/build/static/js/2.e6df11c1.chunk.js",
-    "static/js/2.e6df11c1.chunk.js.map": "/turbina-project-react/build/static/js/2.e6df11c1.chunk.js.map",
+    "static/js/2.8f062745.chunk.js": "/turbina-project-react/build/static/js/2.8f062745.chunk.js",
+    "static/js/2.8f062745.chunk.js.map": "/turbina-project-react/build/static/js/2.8f062745.chunk.js.map",
     "index.html": "/turbina-project-react/build/index.html",
     "static/css/2.ac17e91d.chunk.css.map": "/turbina-project-react/build/static/css/2.ac17e91d.chunk.css.map",
-    "static/css/main.59dfcd1f.chunk.css.map": "/turbina-project-react/build/static/css/main.59dfcd1f.chunk.css.map",
-    "static/js/2.e6df11c1.chunk.js.LICENSE.txt": "/turbina-project-react/build/static/js/2.e6df11c1.chunk.js.LICENSE.txt",
+    "static/css/main.188a3a4d.chunk.css.map": "/turbina-project-react/build/static/css/main.188a3a4d.chunk.css.map",
+    "static/js/2.8f062745.chunk.js.LICENSE.txt": "/turbina-project-react/build/static/js/2.8f062745.chunk.js.LICENSE.txt",
     "static/media/index.css": "/turbina-project-react/build/static/media/close-button.6c1eac8e.svg",
     "static/media/abba-dancing-queen.538c21a4.mp3": "/turbina-project-react/build/static/media/abba-dancing-queen.538c21a4.mp3",
     "static/media/abba-dream.bcc8db87.mp3": "/turbina-project-react/build/static/media/abba-dream.bcc8db87.mp3",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.b9087e6c.js",
     "static/css/2.ac17e91d.chunk.css",
-    "static/js/2.e6df11c1.chunk.js",
-    "static/css/main.59dfcd1f.chunk.css",
-    "static/js/main.2061dc81.chunk.js"
+    "static/js/2.8f062745.chunk.js",
+    "static/css/main.188a3a4d.chunk.css",
+    "static/js/main.6516fa7a.chunk.js"
   ]
 }
