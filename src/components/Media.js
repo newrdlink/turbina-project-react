@@ -8,18 +8,19 @@ import useWindowSize from "../utils/WindowSize.js";
 const Media = (props) => {
 
   const [isLyricOpen, setIsLyricOpen] = React.useState(true)
-  const contentTypeHandler = () => isLyricOpen ? setIsLyricOpen(false) : setIsLyricOpen(true)
+
+  const contentTypeHandler = () => setIsLyricOpen(!isLyricOpen)
 
   const [isMediaOpen, setIsMediaOpen] = React.useState(false)
   const mediaContentVisibilityHandler = () => {
-    isMediaOpen ? setIsMediaOpen(false) : setIsMediaOpen(true)
+    setIsMediaOpen(!isMediaOpen)
     detectVideo(currentTrack)
     props.blurHandler(isScreenWide, isMediaOpen)
   }
 
   const [isVideo, setIsVideo] = React.useState(false)
   function detectVideo(currentTrack) {
-    playlist[currentTrack].banner ? setIsVideo(true) : setIsVideo(false)
+    setIsVideo(playlist[currentTrack].banner)
   }
 
   const [currentTrack, setCurrentTrack] = React.useState(0)
@@ -33,7 +34,7 @@ const Media = (props) => {
   const size = useWindowSize()
   const [isScreenWide, setIsScreenWide] = React.useState(true)
   React.useEffect(() => {
-    (size.width > 767) ? setIsScreenWide(true) : setIsScreenWide(false);
+    setIsScreenWide(size.width > 767)
     props.blurHandler(isScreenWide, !isMediaOpen)
   }, [isScreenWide, isMediaOpen, props, size.width]);
 

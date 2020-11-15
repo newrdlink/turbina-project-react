@@ -11,7 +11,6 @@ function Main() {
     api.addNewData(data)
       .then(res => {
         if (res.status === 200) {
-          return
         }
       })
       .catch((error) => {
