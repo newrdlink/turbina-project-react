@@ -1,0 +1,11 @@
+.form__input_type_checked::before {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 1px solid rgb(148, 148, 148);
+}

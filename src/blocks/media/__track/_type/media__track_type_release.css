@@ -1,0 +1,23 @@
+.media__track_type_release {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 16px;
+}
+
+@media screen and (max-width: 1030px) {
+  .media__track_type_release {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .media__track_type_release {
+    font-size: 14px;
+    line-height: 19px;
+    padding-top: 30px;
+  }
+}

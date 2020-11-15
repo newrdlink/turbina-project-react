@@ -1,0 +1,12 @@
+.menu__open-streaming {
+  visibility: hidden;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+    .menu__open-streaming {
+      visibility: visible;
+      display: block;
+      opacity: 1;
+      transition: visibility 0s, opacity .8s linear;
+  }
+}

@@ -1,0 +1,6 @@
+.media__content-playlist {
+  list-style: none;
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+}

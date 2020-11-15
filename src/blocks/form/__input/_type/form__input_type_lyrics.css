@@ -1,0 +1,6 @@
+.form__input_type_lyrics {
+    padding-top: 25px;
+    text-align: start;
+    resize: vertical;
+    max-height: 300px;
+}

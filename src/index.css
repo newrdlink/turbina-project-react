@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url("./vendor/normalize.css");
+@import url("./blocks/root/root.css");
+@import url("./blocks/page/page.css");
+@import url("./blocks/page/_blur/page_blur.css");
+@import url("./vendor/fonts/inter.css");
+@import url("./blocks/header/header.css");
+@import url("./blocks/header/__logo/header__logo.css");
+@import url("./blocks/menu/__resources/menu__resources.css");
+@import url("./blocks/menu/__resource-link/menu__resource-link.css");
+@import url("./blocks/menu/__resource-link/_visible/menu__resource-link_visible.css");
+@import url("./blocks/menu/__resource/menu__resource.css");
+@import url("./blocks/menu/__button/menu__button.css");
+@import url("./blocks/menu/__close-button/menu__close-button.css");
+@import url("blocks/menu/__open-streaming/menu__open-streaming.css");
+@import url("./blocks/banner/banner.css");
+@import url("./blocks/banner/__title/banner__title.css");
+@import url("./blocks/banner/__img/banner__img.css");
+@import url("./blocks/media/media.css");
+@import url("./blocks/media/__button-open/_active/media__button-open_active.css");
+@import url("./blocks/media/__track/_type/media__track_type_text-song.css");
+@import url("./blocks/main/main.css");
+@import url("./blocks/section-title/section-title.css");
+@import url("./blocks/section-subtitle/section-subtitle.css");
+@import url("./blocks/article/article.css");
+@import url("./blocks/article/__title/article__title.css");
+@import url("./blocks/article/__paragraph/article__paragraph.css");
+@import url("./blocks/article/__paragraph/_position/article__paragraph_position.css");
+@import url("./blocks/article/__theses/article__theses.css");
+@import url("./blocks/article/__thesis/article__thesis.css");
+@import url("./blocks/footer/footer.css");
+@import url("./blocks/footer/__author/footer__author.css");
+@import url("./blocks/footer/__author-link/footer__author-link.css");
+@import url("./blocks/contact/contact.css");
+@import url("./blocks/form/form.css");
+@import url("./blocks/form/__input/form__input.css");
+@import url("./blocks/form/__input-error/form__input-error.css");
+@import url("./blocks/form/__input-error/_place/form__input-error_place_checkbox.css");
+@import url("./blocks/form/__input/_error/form__input_error.css");
+@import url("./blocks/form/__input/_type/form__input_type_checkbox.css");
+@import url("./blocks/form/__input/_checked/form__input_type_checked.css");
+@import url("./blocks/form/__input/_type/form__input_type_lyrics.css");
+@import url("./blocks/form/__label/form__label.css");
+@import url("./blocks/contact/__title/contact__title.css");
+@import url("./blocks/contact/__subtitle/contact__subtitle.css");
+@import url("./blocks/form/__submit-button/form__submit-button.css");
+@import url("./blocks/form/__submit-button/_disabled/form__submit-button_disabled.css");
+@import url("./blocks/form/__submit-error/form__submit-error.css");
+@import url("./blocks/form/__input-link/form__input-link.css");
+@import url("./blocks/player/__current-time/player__current-time.css");
+@import url("./blocks/player/__current-time/_direction/player__current-time_direction_up.css");
+@import url("./blocks/player/player.css");
+@import url("./blocks/player/_direction/player_direction_up.css");
+@import url("./blocks/player/__control-button/player__control-button.css");
+@import url("./blocks/menu/menu.css");
+@import url("./blocks/menu/__resources/menu__resources.css");
+@import url("./blocks/menu/__resource-link/menu__resource-link.css");
+@import url("./blocks/menu/__resource-link/_visible/menu__resource-link_visible.css");
+@import url("./blocks/menu/__resource/menu__resource.css");
+@import url("./blocks/menu/__button/menu__button.css");
+@import url("./blocks/menu/__close-button/menu__close-button.css");
+@import url("blocks/menu/__open-streaming/menu__open-streaming.css");
+@import url("./blocks/menu/__button/_invisible/menu__button_invisible.css");

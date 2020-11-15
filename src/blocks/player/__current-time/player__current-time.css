@@ -1,0 +1,23 @@
+.player__current-time{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 26px;
+  color:#fff;
+}
+
+@media screen and (max-width: 1279px) {
+  .player__current-time {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .player__current-time {
+    font-size: 14px;
+  }
+}

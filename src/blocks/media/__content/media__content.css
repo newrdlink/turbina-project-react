@@ -1,0 +1,44 @@
+.media__content {
+  height: 0;
+  margin: 20px;
+  overflow: hidden;
+  transition: .3s ease-in;
+  transition-property: height;
+  grid-area: text;
+  position: relative;
+  top: -41px;
+  left: 15px;
+}
+
+.media__content:hover {
+  overflow-y: auto;
+  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1);
+  scrollbar-width: thin;
+}
+
+.media__content::-webkit-scrollbar {
+  width: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.media__content::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.media__content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 500px) {
+  .media__content {
+    padding: 0 15px 0 20px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .media__content {
+    left: 50px;
+  }
+}

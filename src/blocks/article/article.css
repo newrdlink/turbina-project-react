@@ -1,0 +1,38 @@
+.article {
+  max-width: 760px;
+}
+
+@media screen and (max-width: 1279px) {
+  .article {
+    max-width: 680px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .article {
+    max-width: 648px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .article {
+    max-width: 270px;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .article {
+    width: var(--smartphone-width-l);
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .article {
+    width: var(--smartphone-width-s);
+    margin: 0 auto;
+  }
+}

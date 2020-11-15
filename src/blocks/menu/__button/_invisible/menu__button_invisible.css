@@ -1,0 +1,5 @@
+.menu__button_invisible {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}

@@ -1,0 +1,12 @@
+.media__button-track_opened {
+  display: block;
+  opacity: 1;
+  transition-property: max-height, opacity;
+}
+
+@media screen and (max-width: 767px) {
+  .media__button-track_opened {
+    margin: 0 auto;
+    order: 3;
+  }
+}

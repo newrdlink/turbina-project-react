@@ -1,0 +1,40 @@
+.media__button-track {
+  /* height: 40px; */
+  width: 135px;
+  align-self: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.21;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  white-space: nowrap;
+  /*visibility: hidden;*/
+  display: none;
+  transition: .3s ease-in-out;
+  transition-property: max-height, opacity;
+  margin: 0 0 0 20px;
+  padding: 8px 20px;
+  order: 2
+}
+
+.media__button-track:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.media__button-track:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .media__button-track {
+    margin: 50px 0;
+    padding: 0 15px 0 20px;
+    height: 31px;
+    width: 161px;
+    border-radius: 15.5px;
+  }
+}

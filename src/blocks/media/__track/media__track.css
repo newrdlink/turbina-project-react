@@ -1,0 +1,28 @@
+.media__track {
+  text-decoration: none;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 27px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1030px) {
+  .media__track {
+    font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .media__track {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 10px;
+  }
+}

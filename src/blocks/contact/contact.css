@@ -1,0 +1,14 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 90px 20px 0 0;
+    margin-left: 51px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 550px) {
+  .contact {
+    padding: 60px 20px 0 0;
+    margin-left: 20px;
+  }
+}

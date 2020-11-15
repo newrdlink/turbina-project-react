@@ -1,0 +1,17 @@
+.rhap_progress-bar_opened {
+  margin: 25px 0 0 0;
+  height: 3px;
+  width: 995px;
+}
+
+@media screen and (max-width: 1280px) {
+  .rhap_progress-bar_opened {
+    width: calc(100vw - 295px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rhap_progress-bar_opened {
+    width: calc(100vw - 128px);
+  }
+}

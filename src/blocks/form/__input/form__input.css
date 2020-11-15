@@ -1,0 +1,39 @@
+.form__input {
+  position: relative;
+  border: 0;
+  max-width: 600px;
+  width: 100%;
+  min-height: 70px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #000;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: inherit;
+}
+
+@media screen and (max-width: 430px) {
+  .form__input {
+    min-height: 53px;
+  }
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.form__input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}

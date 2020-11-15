@@ -1,0 +1,71 @@
+.player {
+  width: calc(100% - 61px);
+  grid-area: player;
+  position: relative;
+  padding: 0 0 0 61px;
+}
+
+
+.rhap_main-controls {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  left: 20px;
+  top: -23px;
+}
+
+.rhap_container {
+  padding: 0;
+  background-color: transparent;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.rhap_controls-section {
+  flex-grow: unset;
+  flex-shrink: unset;
+  flex-basis: unset;
+}
+
+.rhap_volume-controls {
+  display: none;
+}
+
+.rhap_additional-controls {
+  display: none;
+}
+
+
+
+/*толщина и отступы прогресс-бара*/
+.rhap_progress-bar {
+  margin: 25px 0 0 0;
+  height: 3px;
+}
+
+/*изначальный цвет прогресс даунлоадинга*/
+.rhap_progress-bar-show-download {
+  background-color: rgba(243, 243, 243, 0.3);
+}
+
+/*положение ползунка*/
+.rhap_progress-filled {
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.rhap_progress-indicator {
+  background: unset;
+  box-shadow: unset;
+  outline: unset;
+  border: unset;
+}
+
+.rhap_progress-container {
+  margin: 0;
+}
+
+.rhap_horizontal-reverse .rhap_controls-section {
+  margin: 0;
+}
