@@ -46,7 +46,7 @@ const Media = (props) => {
           { "media__button-video_opened": isMediaOpen && isVideo })}>Клип</button>
         <button className={cn("media__button-track",
           { "media__button-track_opened": isMediaOpen })}
-          onClick={contentTypeHandler}>{isLyricOpen ? "Текст песни" : "Релизы"}</button>
+          onClick={contentTypeHandler}>{isLyricOpen ? "Релизы" : "Текст песни"}</button>
       </div>
       <button className={cn("media__button-open",
         { "media__button-open_active": isMediaOpen })}
