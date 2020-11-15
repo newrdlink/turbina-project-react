@@ -6,7 +6,7 @@ function MediaContent(props) {
     return (
       <div className="media__content-text">
         <p className="media__content-text">Текст песни:</p>
-        {props.playlist[props.currentTrack].lyrics_text}
+        {props.playlist[props.currentTrack].lyrics_text || 'Текс этой замечательной песни мы добавим позже'}
       </div>
     )
   } else {
